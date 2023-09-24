@@ -7,7 +7,7 @@ html{
 }
 /* cambio de margenes y fuente a todo el archivo */
 *{
-    color: rgb(36, 20, 212);
+    color: thistle;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
