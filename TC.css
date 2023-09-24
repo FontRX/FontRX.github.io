@@ -1,0 +1,1030 @@
+html{
+    font-family: "brother-1816", sans-serif;
+    font-style: normal;
+    scroll-behavior: smooth;
+    font-weight: 100;
+    font-size: 20px;
+}
+/* cambio de margenes y fuente a todo el archivo */
+*{
+    color: thistle;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0 auto;
+    max-width: 1800px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+/* IMAGEN DE FONDO */
+/* #fondo{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(to top,rgba(5,7,12, 0.75) 0%, rgba(5,7,12, 0.75) 100% ),  
+    url(fondos/fondo\ TAC.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+} */
+/* FONDO */
+#fondo {
+	animation: fondo 8s linear infinite alternate both;
+}
+@keyframes fondo {
+    0% {
+        background-color: rgba(139,39,72);
+    }
+    100% {
+        background-color: #531b69;
+    }
+}
+.code{
+    background-color: #eb9c2da2;
+}
+/* ENCABEZADO */
+.TITULO{
+    text-align: center;
+    padding: 0;
+}
+.fontx{
+    font-size: 4rem;
+    padding: 10px 0px;    
+    color: aqua;
+    margin:0 ;
+    width: 100%;
+    text-decoration: none
+}
+/* BARRA DE NAVEGACION */
+.column{
+    display: inline-block;
+    text-align: center;
+    margin:0;
+    padding: 10px 0px;
+    width: 32.6%;
+    text-decoration: none;
+    color: aquamarine;
+    transition-duration:0.4s ;
+    font-size: 1.5rem;
+}
+.column:hover{
+    background-color: rgba(5,7,12, 0.5);
+    cursor: pointer;
+    color: aquamarine;
+    transform: scale(1.1);
+}
+/*  CUERPO */
+/* concepto */
+#concep1,.concep2,.concep3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    padding: 107px 0px;
+    color: #531b69a5;
+}
+#concep1{
+    font-size: 7rem;
+}
+.concep3{
+    font-size: 30px;
+    opacity: 1;
+}
+.img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 250px;
+    margin: 0 auto;
+    position: relative;
+    background-color: burlywood;
+    overflow: hidden;
+}
+.img:hover::after {
+    transform: translateY(0);
+    cursor: pointer;
+}   
+.img::after{
+    content: "La tomografía computarizada, TC, es un procedimiento con imágenes que usa equipo especial de rayos X para crear imágenes detalladas, o exploraciones, de regiones internas del cuerpo. A veces, también se llama tomografía axial computarizada (TAC).";
+    font-size: 2rem;
+    color: black;
+    background-color:rgba(89, 72, 195);
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    transform: translateY(100%);
+    transition: transform 0.3s;
+}
+#capadetitulo{
+    font-family: monospace;
+    font-size: 50px;
+    width: 100%;
+    background-color:rgba(5,7,12, 0.5);
+    text-align: center;
+    color: rgb(85, 157, 239);
+}
+.tomografia{
+    font-size: 4rem;
+    width: 100%;
+    background-color:rgba(5, 7, 12, 0.368);
+    text-align: center;
+    color: rgba(37, 128, 189, 0.829);
+}
+/* GENERACIONES */
+/* 1 */
+.hx{
+    display: flex;
+}
+.gen1{
+    text-align: center;
+    width: 15%;
+    height: 250px;
+    margin: 0;
+    position: relative;
+    background-color: rgb(51, 149, 176);
+    overflow: hidden;
+}
+.gen1:hover::after {
+    transform: translateY(0);
+    cursor: pointer;
+}   
+.gen1::after{
+    content: "Solo hacia movimientos de Traslación y Rotación. Giraba con solo solo un detector hasta completar una vuelta de 180°, lo cual duraba 5 min aproximadamente.";
+    font-size: 18px;
+    color: black;
+    background-color:rgba(148, 148, 24) ;
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    transform: translateY(100%);
+    transition: transform 0.3s;
+}
+/* 2 */
+.gen2{
+    text-align: center;
+    width: 15%;
+    height: 250px;
+    margin: 0;
+    position: relative;
+    background-color: rgb(135, 168, 222);
+    overflow: hidden;
+}
+.gen2:hover::after {
+    transform: translateY(0);
+    cursor: pointer;
+}   
+.gen2::after{
+    content: "Solo hacia movimientos de Traslación y Rotación con múltiples detectores (10 – 30), en un haz en Abanico (5º),Reduccion del tiempo en 2 min aproximadamente.";
+    font-size: 18px;
+    color: black;
+    background-color:rgba(148, 148, 24);
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    transform: translateY(100%);
+    transition: transform 0.3s;
+}
+/* 3 */
+.gen3{
+    text-align: center;
+    width: 15%;
+    height: 250px;
+    margin: 0;
+    position: relative;
+    background-color: rgb(192, 222, 135);
+    overflow: hidden;
+}
+.gen3:hover::after {
+    transform: translateY(0);
+    cursor: pointer;
+}   
+.gen3::after{
+    content: "Recreaba movimiento de Rotación y Rotacion(doble rotación), en un arco de detectores (300 - 500) que formaban angulos de 25º - 35º. Su rotacion se hacia en 360°.";
+    font-size: 18px;
+    color: black;
+    background-color:rgba(148, 148, 24);
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    transform: translateY(100%);
+    transition: transform 0.3s;
+}
+/* 4 */
+.gen4{
+    text-align: center;
+    width: 15%;
+    height: 250px;
+    margin: 0;
+    position: relative;
+    background-color: rgb(222, 142, 135);
+    overflow: hidden;
+}
+.gen4:hover::after {
+    transform: translateY(0);
+    cursor: pointer;
+}   
+.gen4::after{
+    content: "Se crean 2 modelos; Uno que hacia movimientos de Rotacion-Estacionario y otro de Rotacion-Nutacion. El anillo era fijo de Detectores (R/E).   ";
+    font-size: 18px;
+    color: black;
+    background-color:rgba(148, 148, 24);
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    transform: translateY(100%);
+    transition: transform 0.3s;
+}
+/* 5 */
+.gen5{
+    text-align: center;
+    width: 15%;
+    height: 250px;
+    margin: 0;
+    position: relative;
+    background-color: rgb(222, 135, 168);
+    overflow: hidden;
+}
+.gen5:hover::after {
+    transform: translateY(0);
+    cursor: pointer;
+}   
+.gen5::after{
+    content: "Se crea el Tomógrafo Helicoidal, el cual constaba de adquisición única de datos con detectores estacionarios. El desplazamiento del haz de electrones era hacia el ánodo semicircular de tungsteno. Esta generación se caracteriza por ser monocorte.";
+    font-size: 18px;
+    color: black;
+    background-color:rgba(148, 148, 24);
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    transform: translateY(100%);
+    transition: transform 0.3s;
+}
+/* 6 */
+.gen6{
+    text-align: center;
+    width: 15%;
+    height: 250px;
+    margin: 0;
+    position: relative;
+    background-color: rgb(135, 222, 171);
+    overflow: hidden;
+}
+.gen6:hover::after {
+    transform: translateY(0);
+    cursor: pointer;
+}   
+.gen6::after{
+    content: "Anillo de deslizamiento en un sistema que puede girar continuamente alrededor de un área móvil que contiene al objeto. Esta generación se caracteriza por ser multicorte";
+    font-size: 18px;
+    color: black;
+    background-color:rgba(148, 148, 24);
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    transform: translateY(100%);
+    transition: transform 0.3s;
+}
+/* 7 */
+.gen7{
+    text-align: center;
+    width: 15%;
+    height: 250px;
+    margin: 0;
+    position: relative;
+    background-color: rgb(181, 135, 222);
+    overflow: hidden;
+}
+.gen7:hover::after {
+    transform: translateY(0);
+    cursor: pointer;
+}   
+.gen7::after{
+    content: "Contiene una matriz de múltiples detectores y una fuente de rayos-X que emite haces de forma cónica.";
+    font-size: 18px;
+    color: black;
+    background-color:rgba(148, 148, 24);
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    transform: translateY(100%);
+    transition: transform 0.3s;
+}
+.box{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 10px 0px;
+    margin: 0;
+    font-size: 25px;
+    transition: text-shadow 1s ease;
+    background-color: rgba(5,7,12, 0.3);
+}
+.age:hover{
+    text-shadow: 0 .3rem .5rem rgb(8, 205, 244)
+}
+/* 1 */
+.hx div article{
+    color: antiquewhite;
+}
+.app1{
+    text-align: center;
+    width: 15%;
+    height: 280px;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+}
+.app1:hover::after {
+    transform: translateY(0);
+    cursor: pointer;
+}   
+.app1::after{
+    content: "Las características de velocidad y resolución , permiten realizar biopsias guiadas por TAC , drenaje de colecciones, criocoagulación lesiones.";
+    font-size: 18px;
+    color: black;
+    background-color:rgb(203, 135, 34);
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+/* 2 */
+.app2{
+    text-align: center;
+    width: 15%;
+    height: 280px;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+}
+.app2:hover::after {
+    transform: translateY(0);
+    cursor: pointer;
+}   
+.app2::after{
+    content: "Score de calcificación coronaria, angiografía carotídea por CT, angiografía tridimensional para el diagnóstico de disección o aneurisma aórtico, planeación para la implantación y seguimiento de stents, etc.";
+    font-size: 18px;
+    color: black;
+    background-color:rgb(203, 135, 34);
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    transform: translateY(100%);
+    transition: transform 0.3s;
+}
+/* 3 */
+.app3{
+    text-align: center;
+    width: 15%;
+    height: 280px;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+}
+.app3:hover::after {
+    transform: translateY(0);
+    cursor: pointer;
+}   
+.app3::after{
+    content: "Se minimizan los tiempos de examen, se disminuyen las dosis de radiación, detección de anomalías congénitas.";
+    font-size: 18px;
+    color: black;
+    background-color:rgb(203, 135, 34);
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    transform: translateY(100%);
+    transition: transform 0.3s;
+}
+/* 4 */
+.app4{
+    text-align: center;
+    width: 15%;
+    height: 280px;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+}
+.app4:hover::after {
+    transform: translateY(0);
+    cursor: pointer;
+}   
+.app4::after{
+    content: "Planeación prequirúrgica para la resección de tumores, mapas vasculares para definir resecabilidad, útil especialmente en el hígado, colon y páncreas.";
+    font-size: 18px;
+    color: black;
+    background-color:rgb(203, 135, 34);
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    transform: translateY(100%);
+    transition: transform 0.3s;
+}
+/* 5 */
+.app5{
+    text-align: center;
+    width: 15%;
+    height: 280px;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+}
+.app5:hover::after {
+    transform: translateY(0);
+    cursor: pointer;
+}   
+.app5::after{
+    content: "Detección de tromboembolismo pulmonar por angiotac de arterias pulmonares y detección de trombosis venosa de miembros inferiores como desencadenante. Broncoscopia virtual para seguimiento de estenosis ya conocida , implantación y seguimiento de stent traqueal.";
+    font-size: 18px;
+    color: black;
+    background-color:rgb(203, 135, 34);
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    transform: translateY(100%);
+    transition: transform 0.3s;
+}
+/* 6 */
+.app6{
+    text-align: center;
+    width: 15%;
+    height: 280px;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+}
+.app6:hover::after {
+    transform: translateY(0);
+    cursor: pointer;
+}   
+.app6::after{
+    content: "Para la evaluación de masas renales, estenosis de la arteria renal, pielonefritis, mapeo arterial y venoso, definición de sistema pielocalicial y ureteral.Evaluación preoperatoria pretransplante: Evaluación preoperatoria de donantes renales y hepáticos definiendo la anatomía de los órganos.";
+    font-size: 18px;
+    color: black;
+    background-color:rgb(203, 135, 34);
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    transform: translateY(100%);
+    transition: transform 0.3s;
+}
+/* 7 */
+.app7{
+    text-align: center;
+    width: 15%;
+    height: 280px;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+}
+.app7:hover::after {
+    transform: translateY(0);
+    cursor: pointer;
+}   
+.app7::after{
+    content: "Evaluación de la enfermedad hepática, metástasis de tumores cuyo origen primario está en otros órganos, cirrosis, donantes de hígado.Ortopedia: Gran ventaja de las reconstrucciones volumétricas y estudios dinámicos.";
+    font-size: 18px;
+    color: black;
+    background-color:rgb(203, 135, 34);
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    transform: translateY(100%);
+    transition: transform 0.3s;
+}
+
+/* PARTES 1 Y 2 */
+.partes-1{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 570px;
+}
+.partes-2{
+    padding: 10px 10px;
+    margin: 0px 20px;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+}
+.partes-2 h2{
+    text-align: center;
+    opacity: .6;
+    margin: 10px;
+}
+.partes-2 p{
+    margin: 15px;
+}
+.photo{
+    border-radius: 40%;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    transition: 0.5s ease;
+}
+.photo:hover{
+    transform: scale(1.02);
+}
+/* PRIMERA */
+.primera{
+    width: 100%;
+    padding: 0px 10px;
+    background-color: rgba(5,7,12, 0.3);
+}
+.primera table tr th{
+    padding: 0px 10px;
+}
+.primera table tr td{
+    padding: 10px 10px;
+    font-size: 20px;
+}
+
+.primera table .sex1:hover{
+    background-color: rgba(75, 18, 126, 0.3);
+}
+.primera table .sex2:hover{
+    background-color: rgba(126, 122, 18, 0.176);
+}
+/* FUNDAMENTOS   */
+.fundamentos{
+    width: 98.5%;
+    max-height: 1800px;
+    margin: 15px 0px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    grid-auto-flow: row dense;
+    justify-content: space-around;
+}
+.funda1{
+    transition: all 0.3s  ease;
+    background-color: rgba(19, 37, 82, 0.447);
+    border-radius: 50px;
+    padding: 0.25rem 5px;
+    transition: 0.4s;
+}
+.funda1:hover{
+    box-shadow: 0.1rem 0.5rem 0.9rem rgba(5, 203, 225, 0.943);
+    transform: scale(1.05);
+}
+.funda1 h2{
+    text-align: center;
+    color: rgba(135, 253, 214, 0.801);
+}
+.funda1 p{
+    color: thistle;
+}
+.funda1 h2, .funda1 p{
+    margin: 10px 10px;
+}
+article .saber-mas{
+    display: flex;
+    text-align: center;
+    justify-content: center ;
+}
+article .saber-mas:hover{
+    color:aqua;
+    cursor: pointer;
+}
+/* SEGUNDA */
+.segunda h2{
+    font-size: 30px;
+    color: rgb(127, 255, 212);
+    opacity: .6;
+    margin: 15px 10px;
+    padding-top: 10px;
+    text-align: center;
+}
+.segunda-1{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.segunda-1 p,.segunda-3 p{
+    text-align:left;
+    margin: 10px 15px;
+    padding: 10px 0;
+    font-size: 22px;
+    font-family: 'Gill Sans';
+}
+.dif-1{
+    margin: 10px;
+    padding: 15px;
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    transition: .5s ease;
+} 
+.segunda-2{
+    display: flex;
+    align-content: center;
+    text-align: left;
+}
+.segunda-2 p{
+    text-align:left;
+    margin: 10px 0;
+    padding: 10px 0;
+    font-size: 22px;
+    font-family: 'Gill Sans';
+}
+.dif-2{
+    width: 60%;
+    height: auto;
+    padding: 250px 70px;
+    border-radius: 50%;
+    transition: 0.5s ease;
+}
+.segunda-3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dif-3{
+    width:50%;
+    margin: 15px;
+    padding-left: 20px;
+    border-radius: 20%;
+    transition: .5s ease;
+}
+.dif-1:hover,.dif-2:hover,.dif-3:hover{
+    transform: scale(1.05);
+}
+.segunda-3 p span{
+    color: rgba(0, 187, 255, 0.568);
+}
+/* TERCERA */
+.tercera{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tercera-1{
+    margin: 10px 150px;
+    padding-top: 10px;
+}
+.tercera article p{
+    text-align: left;
+}
+/* BUTTON */
+.custom-btn {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    margin: 15px 0;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    position: relative;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+    7px 7px 20px 0px rgba(0,0,0,.1),
+    4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+}
+.custom-bot button span{
+    color: aqua;
+    font-size: 2rem;
+}
+.custom-bot{
+    margin: 20px 0 
+}
+.btn-5 {
+    width: 100%;
+    height: 70px;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+    background: rgb(0, 98, 255);
+    background: linear-gradient(0deg, rgb(53, 172, 212) 0%, rgb(81, 131, 143) 100%);
+}
+.btn-5:hover {
+    color: #2dceeb;
+    background: transparent;
+    box-shadow:none;
+}
+.btn-5:before,
+.btn-5:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: #f009c2;
+    box-shadow:
+    -1px -1px 5px 0px #fff,
+    7px 7px 20px 0px #0003,
+    4px 4px 5px 0px #0002;
+    transition:400ms ease all;
+}
+.btn-5:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+}
+.btn-5:hover:before,
+.btn-5:hover:after{
+    width:100%;
+    transition:800ms ease all;
+}
+/* CUARTA */
+.cuarta{
+    display: flex;
+    justify-content: center;
+}
+.cuarta-1 p{
+    text-align: left;
+    margin: 10px 150px;
+    padding-top: 10px;
+}
+.cuarta-2{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
+    align-content: center;
+    gap: 25px;
+    padding: 0 10px;
+    margin: 15px 20px;
+}
+.cuarta-2 article{
+    text-align: justify;
+}
+.cuarta-2 article h2{
+    margin-bottom: 25px;
+    text-align: center;
+    color: rgba(225, 141, 38, 0.87);
+}
+.cuarta-24{
+    grid-row: 2/3;
+    grid-column: 1/4;
+}
+.corte{
+    width:900px;
+    height: 560px;
+    border-radius: 12px;
+    transition: 0.5s ease;
+}
+.corte:hover{
+    transform: scale(1.05);
+}
+/* FLIP CARD */
+.contenedor1{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 350px;
+    font-size: 20px;
+    padding: 10px 10px;
+}
+.card{
+    position: relative;
+    height: 250px;
+    width: 400px;
+    text-align: center;
+}
+.card div{
+    position: absolute;
+    width: 95%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backface-visibility: hidden; 
+    transition: 0.5s;
+    /* si la cara que tiene la clase front gira en 180 grados y oculta el back */
+}
+.card{
+    transform: perspective(500px) rotateY(0deg);
+} 
+.front{
+    transform: perspective(500px) rotateY(0deg);
+    font-size: 30px;
+}
+.front h2{
+    color: rgba(117, 249, 205, 0.817);
+}
+.back li{
+    color: aquamarine;
+}
+.card .back {
+    transform: perspective(500px) rotateY(180deg);
+}
+.card:hover .front{
+    transform: perspective(500px) rotateY(180deg);
+    cursor: pointer;
+}
+.card:hover .back {
+    transform: perspective(500px) rotateY(360deg);
+}
+.ul{
+    align-items: center;
+    text-align: left;
+    position: relative;
+}
+.ul2{
+    text-align: left;
+}
+.tomo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.fara{
+    position: relative  ;
+    font-size: 120px;
+    top: -110px;
+    left: 70px;
+}
+.icon {
+    font-size: 250px;
+    rotate: 150deg;
+}
+.sone{
+    position: relative  ;
+    font-size: 120px;
+    bottom: -90px;
+    right: 70px;
+}
+.fara,.icon,.sone{
+    color: rgb(235, 147, 147);
+    transition: .5s ease;
+}
+.fara:hover,.sone:hover,.front:hover{
+    transform: scale(1.3);
+}
+.prepitch{
+    color: #78d1419e;
+    margin: 10px 0;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/* QUINTA  */
+/* PITCH */
+.quinta{
+    display: flex;
+    align-items: center;  
+    min-height: 150px;
+    justify-items: center;
+}
+.defpitch0{
+    margin: 20px;
+}
+/* FACTOR DE DESPLAZAMIENTO DEL HAZ */
+.pitches{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 25px 50px ; 
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.defpitch1,.defpitch2{
+    transition: 0.3s ease;
+}
+.defpitch1:hover,.defpitch2:hover{
+    transform: scale(1.1);
+}
+.defpitch1{
+    grid-column: 1/1;
+}
+.defpitch1 img,.defpitch2 img{
+    width:100% ;
+    height:100% ;
+}
+.defpitch2{
+    grid-column: 2/3;
+}
+.defpitch3{
+    grid-column: 1/2;
+    grid-row:1/2 ;
+}
+.defpitch4{
+    grid-column: 2/3;
+    grid-row:1/2 ;
+}
+.defpitch3 h2,.defpitch4 h2{
+    color: rgba(127, 255, 212, 0.705);
+}
+/* SEXTA */
+/* flipo cardo */
+.sexta{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: 15px 15px;
+}
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+    background-color: transparent;
+    width: 400px;
+    height: 400px;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    margin: 0 auto;
+}
+  /* This container is needed to position the front and back side */
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+}
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+  /* Position the front and back side */
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+  /* Style the front side (fallback if image is missing) */
+.flip-card-front {
+    color: black;
+}
+  /* Style the back side */
+.flip-card-back {
+    font-size: 12px;
+    text-align: center;
+    transform: rotateY(180deg);
+    text-align: left;
+    padding: 11%;
+}
+.flip-card-back h2,.flip-card-front h2{
+    color: #2dcfebe0;
+}
+
+
+/* PIE DE PAGINA */
+footer{
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    padding: 1.5rem;
+    background-color:rgba(211, 150, 29, 0.3);
+    color: #fff;
+}
+footer section{
+    float: right;
+}
+#underscore{
+    text-decoration: none;
+}
+footer div button{
+    width: 100px;
+    height: 35px;
+}
+footer div{
+    font-size: 35px;
+}
+/* ScrollReveal */
+@keyframes show {
+    from {
+        opacity: 0;
+        scale: 50%;
+        transition: ease;
+    }
+    to {
+        opacity: 1;
+        scale: 100%;
+    } 
+}
+section,article,h2,p {
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+    animation-timeline: --image;
+    animation-name: show;
+    animation-range: entry 25% cover 20%;
+    animation-fill-mode: both;
+}
+
+
