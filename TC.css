@@ -995,6 +995,18 @@ article .saber-mas:hover{
 .sar1 img:hover{
     transform: scale(1.05);
 }
+/* SEPTIMA */
+.septima{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-height: auto;
+}
+.septima-1 img{
+    width:250px ;
+    height: 250px;
+}
 /* PIE DE PAGINA */
 footer{
     position: relative;

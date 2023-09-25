@@ -562,6 +562,178 @@
         interpolación.        
         </p>
     </section>
+    <h2 id="capadetitulo">Calidad de Imagen</h2>
+    <section>
+        <p>Los principales factores que influyen en la calidad de imagen, ya sea en un tomógrafo
+            de simple fila de detectores o multislice, son la resolución espacial y la resolución de
+            densidad. </p>
+        <article>
+            <h2>Resolución de densidad</h2>
+            <p>Es la capacidad de diferenciar los coeficientes de atenuación de piezas adyacentes de
+                tejido. Una desviación estándar (б) de estos valores se traduce en la imagen como ruido,
+                influyendo en este el flujo de fotones, la dispersión de RX, el tamaño del voxel, entre
+                otros.</p>
+        </article>
+        <article>
+            <h2>Resolución espacial</h2>
+            <p>Es una medida de la representación de estructuras anatómicas. Suele describirse en
+                términos de anchura total a mitad del máximo de altura (FHWM). Este parámetro es la
+                medida de la exactitud con la que se produce un punto en la imagen. <span> A menor FHWM,
+                mejor resolución. </span><br><br>
+                La función de transferencia de modulación (FTM) (adquirida luego de hacer la
+                transformada de fourier de la FHWM), representa la fidelidad relativa de la imagen en
+                comparación con el objeto real. <br><br>
+                Factores que influyen: filtro utilizado en la reconstrucción, espesor de corte,
+                nº de proyecciones, tamaño de la matriz, punto focal del tubo de RX.  <br><br>
+                El espesor de corte es el primer parámetro que afecta la resolución en el eje Z.
+                Un pequeño espesor de corte, Ej. 0.5/0.7 mm, produce datos en 3D excelentes con
+                mínimos artefactos; sin embargo también un pequeño espesor de corte incrementa el
+                tiempo de examen y reduce la eficiencia geométrica del scan, con el último efecto
+                haciéndose más notable en tomógrafos de 4 cortes. <br><br>
+                La eficiencia geométrica se define como el porcentaje de la relación del espesor
+                nominal total de todos los cortes adquiridos simultáneamente y del FHWM del área
+                irradiada a lo largo del eje Z, dicho en otras palabras porcentaje de radiación que es
+                usado para la reconstrucción de la imagen.  <br><br>
+                Como en TC secuencial, a mayor espesor de corte reconstruido, menor resolución de
+                contraste en la imagen; a menor espesor de corte, mejor resolución espacial. Si el
+                espesor de corte es grande las imágenes pueden ser afectadas por artefacto debido al
+                efecto de volumen parcial en el corte; si el espesor de corte es pequeño (Ej. 1mm) los
+                cortes pueden ser afectados por ruido, por lo tanto es importante encontrar un equilibrio
+                entre ambos parámetros. <br><br>
+                La emisión de RX antes de ser atenuada por un objeto, tiene un área de mayor o menor
+                intensidad, referida como la máxima emisión (del inglés full beam) y un área con
+                reducción gradual, refiriéndose este último a la penumbra. <br><br>
+                Para un equipo de TC de corte único, la fila de detectores abarca la emisión de RX total,
+                incluyendo la emisión máxima y la penumbra, su eficiencia geométrica es del 100%;
+                mientras que para la adquisición de datos de equipos multislice, el área de penumbra no
+                es detectada y entonces no se utiliza en la reconstrucción de la imagen. Esto implica una
+                reducción en la eficiencia geométrica. <br><br>
+            </p>
+            <img src="tc/RE.png">
+            <p>Para equipos de 4 cortes la eficiencia geométrica es pobre cuando se compara con
+                equipos de 16 cortes, debido a la cantidad de GAPS. <br><br>
+                En uno u otro grado, todos los parámetros técnicos en TC impactan en la calidad de
+                imagen. Es importante variarlos en forma apropiada para optimizar el estudio, ósea
+                adaptar las secuencias para obtener los objetivos deseados. 
+                </p>
+        </article>
+        <article>
+            <h2>Factores técnicos</h2>
+            <p>Son aquellos que se seleccionan antes de hacerse el estudio, y no pueden ser alterados
+                luego de la adquisición de la imagen.
+                Ellos son: mAs, Kv, resolución, tiempo de rotación, colimación, pitch. </p>
+        </article>
+        <article>
+            <h2>Factores de procesamiento</h2>
+            <p>Son los parámetros responsables de procesar los datos crudos volumétricos,
+                recolectados durante el estudio, para la obtención de la imagen.
+                Ellos son: algoritmos de reconstrucción, matriz de imagen, incremento en corte de
+                reconstrucción. </p>
+        </article>
+        <article>
+            <h2>Factores de tiempo</h2>
+            <p>Son aquellos parámetros que se relacionan con la reconstrucción de la imagen y los
+                tiempos de procesamiento.
+                Ellos son: matriz de imagen, mejoras post-procesamiento, incremento en corte de
+                reconstrucción, colimación, área cubierta. </p>
+        </article>
+    </section>
+    <h2 id="capadetitulo">Artefactos</h2>
+    <section class="septima">
+        <h2>Se llama artefactos a toda imagen distorsionada y no deseada que afecta a la calidad de imagen.</h2>
+        <article class="septima-1">
+            <h2>Artefacto de los blancos por alteración de los detectores o error de estabilidad</h2>
+            <p>Ocurren por una alteración en la calibración y balance de los detectores2,3,7,8. Si estos no se encuentran intercalibrados o alineados, la proyección individual de cada anillo de datos es diferente, causando múltiples anillos concéntricos de intensidad variable (“rueda de carro”)2,3,5 (fig. 2). También aparecen cuando el haz de rayos no está centrado sobre los detectores5.
+            El mantenimiento y la calibración periódicos del equipo de TC evita su aparición2,3,5,7.
+            </p>
+            <img src="tc/artefactodelosdetectores.png">
+        </article>
+        <article class="septima-1">
+            <h2>Movimientos del paciente</h2>
+            <p>Se producen por movimientos del paciente (respiración, latidos cardíacos, temblor, excitación, nerviosismo, deglución, peristaltismo, etc.)5,7 y suelen aparecer en los escaneos donde es necesario mantener la respiración, especialmente en los estudios de tórax2,8.
+            Se aprecian como bandas blancas y negras intercaladas, manchas o lunares negros, pérdida de la resolución, desdoblamiento de los contornos de las diferentes estructuras o distorsión de la anatomía</p>
+            <img src="tc/movpa.png">
+        </article>
+        <article class="septima-1">
+            <h2>Factores ambientales </h2>
+            <p>La humedad o temperatura ambiente, así como el exceso de partículas de polvo dentro del ordenador, causan errores en el algoritmo de reconstrucción2. La colocación de un equipo de aire acondicionado y la higiene en la sala del tomógrafo y consola evitan la presencia de estas distorsiones.</p>
+        </article>
+        <article class="septima-1">
+            <h2>Errores de espiral o “de remolino” </h2>
+            <p>En los tomógrafos helicoidales la mesa de examen avanza continuamente, mientras el tubo de rayos rota alrededor del paciente. La fila de detectores pasa por el plano de interés, y la reconstrucción oscila entre las medidas de un solo detector y la interpolación de dos o más detectores. Si existe una gran diferencia de contraste entre estos, se crea una imagen distorsionada con forma de anillos concéntricos y espiculados, hipo e hiperdensos5,7 (fig. 14). Estos son más evidentes en los cortes finos.</p>
+            <img src="tc/espiral.png">
+        </article>
+        <article class="septima-1">
+            <h2>Presencia de cuerpos extraños/material médico</d>
+            <p>Se originan por elementos o instrumentos quirúrgicos compuestos por algún metal, como prótesis dentales, material de osteosíntesis, piercings, joyas, aparatos de vigilancia, cables, utensilios médicos, semillas de radioterapia, contrastes orales o endovenosos, y accesorios de ropa (botones, cierres, etc.)5,8,10. Aunque en menor medida, también puede generarse por el gas (p. ej. a nivel de la cámara gástrica).
+            Este artificio se reconoce porque el elemento de alta densidad genera un halo de falsa absorción en una o varias direcciones, como consecuencia de la variación abrupta de densidad5. Aparece como bandas o “rayos de sol”, forzando a los detectores a operar en una región de respuesta no lineal2,3 (figs. 5–7), o como líneas de transición hipo e hiperdensas centradas en las imágenes metálicas presentes en el corte estudiado5,7.
+            </p>
+            <img src="tc/cuerpoextraño.png">
+        </article>
+        <article class="septima-1">
+            <h2>Ruido (quantum mottle) </d>
+            <p>Es una falla del cálculo estadístico que genera rayas y líneas espiculadas dispuestas al azar, preferentemente en la dirección de mayor atenuación7. Al aumentar el ruido, los objetos con alta densidad (como el hueso) se manifiestan con bajo contraste, mientras que los tejidos blandos tienen una pobre visualización.
+            El ruido disminuye aumentando el miliamperaje o combinando la información de distintos escaneos, como el contraste de fases7.</p>
+        </article>
+        <article class="septima-1">
+            <h2>Artefacto por entrada de flujo</h2>
+            <p>Se produce a nivel de las venas axilar o subclavia en las TC de tórax con contraste intravascular, como consecuencia del corto intervalo entre la administración del contraste endovenoso y el comienzo de la adquisición de los datos8. La distorsión de la imagen, con aumento de la densidad, impide la correcta valoración de la anatomía axilar (fig. 8), por lo que, para que el artificio desaparezca, hay que retrasar unos segundos el inicio del escaneo.
+            </p>
+            <img src="tc/flujo.png">
+        </article>
+        <article class="septima-1">
+            <h2>Proyección incompleta</h2>
+            <p>Aparece cuando una parte del paciente se encuentra fuera del área de interés, pero igualmente es escaneada. La computadora, al no tener suficientes datos para reconstruir esa región, genera artificios o bandas espiculadas. Sucede, por ejemplo, cuando se estudia el tórax o abdomen superior y el paciente no puede elevar los brazos3 (fig. 10). También puede constatarse cuando el haz de rayos atraviesa un objeto metálico.</p>
+            <img src="tc/poyectincompleta.png">
+        </article>
+        <article class="septima-1">
+            <h2>Artificio de desborde de campo o salida de campo</h2>
+            <p>Se objetivan zonas o áreas hiperdensas en el borde o límite de la imagen. Estos artefactos se visualizan cuando la región a estudiar o el cuerpo del paciente salen o exceden el campo de medida5,7.
+            Se evitan adaptando el campo de medida al volumen corporal del paciente. En casos de obesidad puede ser difícil, pero en los nuevos equipos multicorte existen soluciones informáticas (algoritmos de reconstrucción) para solucionarlo5,7.</p>
+        </article>
+        <article class="septima-1">
+            <h2>Efecto del haz cónico</h2>
+            <p>Con el incremento de los números de cortes por rotación se requiere una mayor colimación, y el haz de rayos pasa de una configuración cónica a una en abanico (se expande), produciendo un artefacto similar al volumen parcial3.
+            Se origina en los equipos multicorte debido a la elevada conicidad del haz de rayos (multilíneas) y a la utilización de un paso de hélice elevado3,5. A mayor número de detectores, mayor será el artificio3.</p>
+        </article>
+        <article class="septima-1">
+            <h2>Artefacto escalonado</h>
+            <p>Se produce en las imágenes multiplanares o 3D reformateadas, manifestándose en los bordes de la estructura estudiada como líneas superpuestas, semejantes a los peldaños de una escalera3,11.
+            Aparece en las imágenes que necesitan una gran colimación y una reconstrucción no solapada3 (figs. 11 y 12), y se puede eliminar virtualmente con cortes finos reformateados.
+            </p>
+            <img src="tc/escalonado.png">
+        </article>
+        <article class="septima-1">
+            <h2>Artefacto en “cebra”</h2>
+            <p>Se observa como tenues rayas escalonadas en reconstrucciones multiplanares y 3D en el plano sagital o coronal. Se genera por un excesivo grosor del corte, que origina una inhomogeneidad a lo largo del eje Z3,7 (fig. 13). Para reducirlo, se emplean algoritmos informáticos3,7.</p>
+            <img src="tc/cebra.png">
+        </article>
+        <article class="septima-1">
+            <h2>Artefactos en banda o anillos</h2>
+            <p>son causados por una ineficiente calibración de los
+            detectores, movimientos del paciente, presencia de objetos metálicos o radiodensos,
+            mientras que un error en la alineación del tubo-detector dará una borrosidad de bordes
+            en la imagen. </p>
+        </article>
+        <article class="septima-1">
+            <h2>Penumbra geométrica, geometría de los rayos X por descuido o falta de linealidad</h2>
+            <p>Una inadecuada alineación de los rayos X (Rx) del tubo con los detectores puede generar una imagen borrosa con resolución espacial limitada2. Se manifiesta como una penumbra relacionada con la medida del foco, ya que a menor tamaño, se obtiene menor penumbra geométrica5.
+            Un correcto y periódico mantenimiento y calibración del tomógrafo o una colimación secundaria eficaz reducen el efecto5.</p>
+        </article>
+        <article class="septima-1">
+            <h2>Error parcial de volumen</h2>
+            <p>Cuando los tejidos de diferente absorción ocupan el mismo voxel, la intensidad del píxel corresponde al promedio de las densidades de las estructuras del voxel2,5. Este error se produce cuando el haz de rayos atraviesa estructuras heterogéneas y de alta densidad, dispuestas de forma paralela al eje de giro del sistema.
+            Suele presentarse en la base del cráneo a nivel de los peñascos y en la protuberancia occipital interna (fig. 9). </p>
+            <img src="tc/errorparcialñ.png">
+        </article>
+        <article class="septima-1">
+            <h2>Endurecimiento del haz (del ingles beam hardening)</h2>
+            <p>Se genera por la absorción preferencial de los fotones de baja energía del rayo en los tejidos. Este efecto es más pronunciado en áreas de gran atenuación (como el hueso)2,3,5,7 y sucede cuando, al atravesar el haz de rayos, las estructuras encuentran transiciones muy marcadas de espesor y densidad5.   
+            En este caso, se aprecian líneas o bandas espiculadas e intercaladas, claras y oscuras, como una sombra debajo de las costillas o como un aumento de sombras espiculadas en el mediastino, la cintura escapular o la base del cráneo2,3,5,7 </p>
+            <img src="tc/endurecimientohaz.png">
+            </d>
+        </article>
+    </section>
 </body>
 <footer>
     <section>
