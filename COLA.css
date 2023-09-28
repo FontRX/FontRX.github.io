@@ -39,3 +39,199 @@ html{
     grid-template-columns: repeat(3, 1fr);
     gap: 8px;
 }
+
+/* another */
+.gen1{
+    text-align: center;
+    width: 15%;
+    height: 250px;
+    margin: 0;
+    position: relative;
+    background-color: rgb(51, 149, 176);
+    overflow: hidden;
+}
+.gen1:hover::after {
+    transform: translateY(0);
+    cursor: pointer;
+}   
+.gen1::after{
+    content: "Solo hacia movimientos de Traslación y Rotación. Giraba con solo solo un detector hasta completar una vuelta de 180°, lo cual duraba 5 min aproximadamente.";
+    font-size: 18px;
+    color: black;
+    background-color:rgba(148, 148, 24) ;
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    transform: translateY(100%);
+    transition: transform 0.3s;
+}
+/* 2 */
+.gen2{
+    text-align: center;
+    width: 15%;
+    height: 250px;
+    margin: 0;
+    position: relative;
+    background-color: rgb(135, 168, 222);
+    overflow: hidden;
+}
+.gen2:hover::after {
+    transform: translateY(0);
+    cursor: pointer;
+}   
+.gen2::after{
+    content: "Solo hacia movimientos de Traslación y Rotación con múltiples detectores (10 – 30), en un haz en Abanico (5º),Reduccion del tiempo en 2 min aproximadamente.";
+    font-size: 18px;
+    color: black;
+    background-color:rgba(148, 148, 24);
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    transform: translateY(100%);
+    transition: transform 0.3s;
+}
+/* 3 */
+.gen3{
+    text-align: center;
+    width: 15%;
+    height: 250px;
+    margin: 0;
+    position: relative;
+    background-color: rgb(192, 222, 135);
+    overflow: hidden;
+}
+.gen3:hover::after {
+    transform: translateY(0);
+    cursor: pointer;
+}   
+.gen3::after{
+    content: "Recreaba movimiento de Rotación y Rotacion(doble rotación), en un arco de detectores (300 - 500) que formaban angulos de 25º - 35º. Su rotacion se hacia en 360°.";
+    font-size: 18px;
+    color: black;
+    background-color:rgba(148, 148, 24);
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    transform: translateY(100%);
+    transition: transform 0.3s;
+}
+/* 4 */
+.gen4{
+    text-align: center;
+    width: 15%;
+    height: 250px;
+    margin: 0;
+    position: relative;
+    background-color: rgb(222, 142, 135);
+    overflow: hidden;
+}
+.gen4:hover::after {
+    transform: translateY(0);
+    cursor: pointer;
+}   
+.gen4::after{
+    content: "Se crean 2 modelos; Uno que hacia movimientos de Rotacion-Estacionario y otro de Rotacion-Nutacion. El anillo era fijo de Detectores (R/E).   ";
+    font-size: 18px;
+    color: black;
+    background-color:rgba(148, 148, 24);
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    transform: translateY(100%);
+    transition: transform 0.3s;
+}
+/* 5 */
+.gen5{
+    text-align: center;
+    width: 15%;
+    height: 250px;
+    margin: 0;
+    position: relative;
+    background-color: rgb(222, 135, 168);
+    overflow: hidden;
+}
+.gen5:hover::after {
+    transform: translateY(0);
+    cursor: pointer;
+}   
+.gen5::after{
+    content: "Se crea el Tomógrafo Helicoidal, el cual constaba de adquisición única de datos con detectores estacionarios. El desplazamiento del haz de electrones era hacia el ánodo semicircular de tungsteno. Esta generación se caracteriza por ser monocorte.";
+    font-size: 18px;
+    color: black;
+    background-color:rgba(148, 148, 24);
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    transform: translateY(100%);
+    transition: transform 0.3s;
+}
+/* 6 */
+.gen6{
+    text-align: center;
+    width: 15%;
+    height: 250px;
+    margin: 0;
+    position: relative;
+    background-color: rgb(135, 222, 171);
+    overflow: hidden;
+}
+.gen6:hover::after {
+    transform: translateY(0);
+    cursor: pointer;
+}   
+.gen6::after{
+    content: "Anillo de deslizamiento en un sistema que puede girar continuamente alrededor de un área móvil que contiene al objeto. Esta generación se caracteriza por ser multicorte";
+    font-size: 18px;
+    color: black;
+    background-color:rgba(148, 148, 24);
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    transform: translateY(100%);
+    transition: transform 0.3s;
+}
+/* 7 */
+.gen7{
+    text-align: center;
+    width: 15%;
+    height: 250px;
+    margin: 0;
+    position: relative;
+    background-color: rgb(181, 135, 222);
+    overflow: hidden;
+}
+.gen7:hover::after {
+    transform: translateY(0);
+    cursor: pointer;
+}   
+.gen7::after{
+    content: "Contiene una matriz de múltiples detectores y una fuente de rayos-X que emite haces de forma cónica.";
+    font-size: 18px;
+    color: black;
+    background-color:rgba(148, 148, 24);
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    transform: translateY(100%);
+    transition: transform 0.3s;
+}
+.box{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 10px 0px;
+    margin: 0;
+    font-size: 25px;
+    transition: text-shadow 1s ease;
+    background-color: rgba(5,7,12, 0.3);
+}
+.age:hover{
+    text-shadow: 0 .3rem .5rem rgb(8, 205, 244)
+}

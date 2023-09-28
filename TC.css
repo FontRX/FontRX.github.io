@@ -135,191 +135,34 @@ body{
     text-align: center;
     color: rgba(37, 128, 189, 0.829);
 }
+/* antoher 2 */
+.cardd {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid red;
+    padding: 10px;
+}
+
+.containerx {
+    display: grid;
+    gap: 30px;
+    /* Change the order to see the evolution (The only problem is that auto-fit is not compatible with IE 🔥🔥IE🔥🔥) */
+    ; /* Evolution level 1 -> responsive */
+    grid-template-columns: repeat(
+    auto-fit,
+    minmax(200px, 1fr)
+    ); /* Evolution level 2 -> responsive and card responsive */
+    justify-content: center;
+    justify-items: center;
+    padding: 10px;
+    /* align-items: flex-start; */
+}
 /* GENERACIONES */
 /* 1 */
 .hx{
     display: flex;
-}
-.gen1{
-    text-align: center;
-    width: 15%;
-    height: 250px;
-    margin: 0;
-    position: relative;
-    background-color: rgb(51, 149, 176);
-    overflow: hidden;
-}
-.gen1:hover::after {
-    transform: translateY(0);
-    cursor: pointer;
-}   
-.gen1::after{
-    content: "Solo hacia movimientos de Traslación y Rotación. Giraba con solo solo un detector hasta completar una vuelta de 180°, lo cual duraba 5 min aproximadamente.";
-    font-size: 18px;
-    color: black;
-    background-color:rgba(148, 148, 24) ;
-    position: absolute;
-    inset: 0;
-    display: grid;
-    place-items: center;
-    transform: translateY(100%);
-    transition: transform 0.3s;
-}
-/* 2 */
-.gen2{
-    text-align: center;
-    width: 15%;
-    height: 250px;
-    margin: 0;
-    position: relative;
-    background-color: rgb(135, 168, 222);
-    overflow: hidden;
-}
-.gen2:hover::after {
-    transform: translateY(0);
-    cursor: pointer;
-}   
-.gen2::after{
-    content: "Solo hacia movimientos de Traslación y Rotación con múltiples detectores (10 – 30), en un haz en Abanico (5º),Reduccion del tiempo en 2 min aproximadamente.";
-    font-size: 18px;
-    color: black;
-    background-color:rgba(148, 148, 24);
-    position: absolute;
-    inset: 0;
-    display: grid;
-    place-items: center;
-    transform: translateY(100%);
-    transition: transform 0.3s;
-}
-/* 3 */
-.gen3{
-    text-align: center;
-    width: 15%;
-    height: 250px;
-    margin: 0;
-    position: relative;
-    background-color: rgb(192, 222, 135);
-    overflow: hidden;
-}
-.gen3:hover::after {
-    transform: translateY(0);
-    cursor: pointer;
-}   
-.gen3::after{
-    content: "Recreaba movimiento de Rotación y Rotacion(doble rotación), en un arco de detectores (300 - 500) que formaban angulos de 25º - 35º. Su rotacion se hacia en 360°.";
-    font-size: 18px;
-    color: black;
-    background-color:rgba(148, 148, 24);
-    position: absolute;
-    inset: 0;
-    display: grid;
-    place-items: center;
-    transform: translateY(100%);
-    transition: transform 0.3s;
-}
-/* 4 */
-.gen4{
-    text-align: center;
-    width: 15%;
-    height: 250px;
-    margin: 0;
-    position: relative;
-    background-color: rgb(222, 142, 135);
-    overflow: hidden;
-}
-.gen4:hover::after {
-    transform: translateY(0);
-    cursor: pointer;
-}   
-.gen4::after{
-    content: "Se crean 2 modelos; Uno que hacia movimientos de Rotacion-Estacionario y otro de Rotacion-Nutacion. El anillo era fijo de Detectores (R/E).   ";
-    font-size: 18px;
-    color: black;
-    background-color:rgba(148, 148, 24);
-    position: absolute;
-    inset: 0;
-    display: grid;
-    place-items: center;
-    transform: translateY(100%);
-    transition: transform 0.3s;
-}
-/* 5 */
-.gen5{
-    text-align: center;
-    width: 15%;
-    height: 250px;
-    margin: 0;
-    position: relative;
-    background-color: rgb(222, 135, 168);
-    overflow: hidden;
-}
-.gen5:hover::after {
-    transform: translateY(0);
-    cursor: pointer;
-}   
-.gen5::after{
-    content: "Se crea el Tomógrafo Helicoidal, el cual constaba de adquisición única de datos con detectores estacionarios. El desplazamiento del haz de electrones era hacia el ánodo semicircular de tungsteno. Esta generación se caracteriza por ser monocorte.";
-    font-size: 18px;
-    color: black;
-    background-color:rgba(148, 148, 24);
-    position: absolute;
-    inset: 0;
-    display: grid;
-    place-items: center;
-    transform: translateY(100%);
-    transition: transform 0.3s;
-}
-/* 6 */
-.gen6{
-    text-align: center;
-    width: 15%;
-    height: 250px;
-    margin: 0;
-    position: relative;
-    background-color: rgb(135, 222, 171);
-    overflow: hidden;
-}
-.gen6:hover::after {
-    transform: translateY(0);
-    cursor: pointer;
-}   
-.gen6::after{
-    content: "Anillo de deslizamiento en un sistema que puede girar continuamente alrededor de un área móvil que contiene al objeto. Esta generación se caracteriza por ser multicorte";
-    font-size: 18px;
-    color: black;
-    background-color:rgba(148, 148, 24);
-    position: absolute;
-    inset: 0;
-    display: grid;
-    place-items: center;
-    transform: translateY(100%);
-    transition: transform 0.3s;
-}
-/* 7 */
-.gen7{
-    text-align: center;
-    width: 15%;
-    height: 250px;
-    margin: 0;
-    position: relative;
-    background-color: rgb(181, 135, 222);
-    overflow: hidden;
-}
-.gen7:hover::after {
-    transform: translateY(0);
-    cursor: pointer;
-}   
-.gen7::after{
-    content: "Contiene una matriz de múltiples detectores y una fuente de rayos-X que emite haces de forma cónica.";
-    font-size: 18px;
-    color: black;
-    background-color:rgba(148, 148, 24);
-    position: absolute;
-    inset: 0;
-    display: grid;
-    place-items: center;
-    transform: translateY(100%);
-    transition: transform 0.3s;
 }
 .box{
     display: flex;
@@ -519,7 +362,6 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 600px;
 }
 .partes-2{
     padding: 10px 10px;
@@ -534,7 +376,7 @@ body{
     margin: 10px;
 }
 .partes-2 p{
-    margin-bottom: 50px;
+    margin-bottom: 10px;
 }
 .photo{
     border-radius: 40%;
@@ -981,6 +823,7 @@ article .saber-mas:hover{
     align-items: center;
     height: auto;
     margin:0 auto;
+    margin-bottom: 50px;
 }
 .sar1 p{
     margin: 0 25px;
@@ -996,49 +839,217 @@ article .saber-mas:hover{
     transform: scale(1.05);
 }
 /* SEPTIMA */
-.septima{
+.septima0 p{
+    margin: 0 25px;
+    padding: 15px 0;
+}
+.septima0{
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
+}
+.RE{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.sept{
+    margin: 5px 0;
+}
+.sept h2{
+    text-align: center;
+    padding: 15px 0;
+}
+.sept p{
+    text-align: left;
+    padding: 15px 0;
+    margin: 5px;
+}
+.arte{
+    text-align: center;
+    margin: 10px;
+    color: #9fd0d8;
+    text-shadow: 0.5px 1px rgb(0, 255, 72);
+}
+
+.septima-1{
+    margin-bottom: 10px;
+}
+.septima-1 h2{
+    text-align: center;
+    padding: 15px 0;
+}
+.septima-1 p{
+    text-align: left;
+    margin: 15px 15px;
+}
+.artefac{
+    display: flex;
     justify-content: center;
     align-items: center;
-    max-height: auto;
 }
-.septima-1 img{
-    width:250px ;
-    height: 250px;
+.artefac img{
+    width: 350px;
+    height: 350px;
+}
+/* OCTAVA */
+.mip0{
+    position: relative;
+    width: 450px;
+    transition: all .3s ease;
+    margin: 25px;
+}
+
+.mip0 img:first-child{
+    box-shadow: 0 60px 60px 
+                -60px rgba(227, 179, 19, 0.5);
+    border-radius: 4px;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 30px;
+}
+.mip0 img{
+    width: 450px;
+    height: 450px;
+    border-radius: 30px;
+}
+.mip0 img:last-child{
+    position: absolute;
+    width: 450px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transform: translateY(25%);
+    transition: .3s ease;
+    opacity: 0;
+}
+.mip0:hover{
+    transform: 
+    perspective(250px)
+    rotateX(8deg)
+    translateY(-5%)
+    translateZ(0);
+}
+.mip0::before{
+    content:'' ;
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background-image: 
+    linear-gradient(
+        to bottom, transparent 10%,
+        rgba(0,0,0,0.5) 50%,
+        rgba(0,0,0) 95%
+    );
+    opacity: 0;
+    transition: all .3s ease;
+}
+.mip0:hover::before{
+    opacity: 1;
+}
+.mip0:hover img:last-child{
+    opacity: 1;
+    transform: translateY(10%);
+}
+.octava1{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: space-around;
+    place-items: center;
+    min-height: 800px;
+}
+.octava1 article{
+    margin: 25px;
+    margin-left: 100px;
+}
+.octava1 article h2{
+    margin: 10px 0;
+    padding: 10px 0;
+}
+.octa1{
+    grid-row: 1/1;
+}
+.octa2{
+    grid-row: 2/3 ;
+}
+.octa3{
+    grid-row: 3/4;
+}
+.octa4{
+    grid-row: 4/5;
+}
+.octa5{
+    grid-row: 5/6;
 }
 /* PIE DE PAGINA */
 footer{
-    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     bottom: 0px;
     width: 100%;
-    padding: 1.5rem;
-    background-color:rgba(211, 150, 29, 0.3);
-    color: #fff;
-}
-footer section{
-    float: right;
+    padding: 10px 25px;
+    background-color:rgba(5,7,12, 0.5);   
 }
 #underscore{
     text-decoration: none;
 }
-footer div button{
-    width: 100px;
-    height: 35px;
+
+.ultimo0 .inicio{
+    color: rgb(39, 205, 2);
+    width: 250px;
+    margin: 0 ;
+    border-radius: 10px;
+    font-size: 50px;
+    cursor: pointer;
+    transition: 0.3s ease;
 }
-footer div{
-    font-size: 35px;
+.inicio:hover{
+    background-color: #345991;
 }
+
+/* footer .rice{   
+    width: 250px; 
+    border: 2px solid #ffa812;
+    background-color: #ff9900;
+    color: white;
+    border-radius: 10px;
+    padding: 0.5em;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 5px 0 #e67409;
+    transition-duration: 0.4s;
+    text-shadow: 2px 2px 0 #e67409;
+}
+
+footer .rice:hover{   
+    transform: translateY(5px);
+    box-shadow: 0 0 0 #e67409;
+    text-shadow: 2px 2px 0 #42964c;
+    background-color: #69c160;
+    border: 2px solid #42964c;
+} */
+
+
+
+
+
+
 /* ScrollReveal */
 @keyframes show {
-    from {
-        opacity: 0;
-        scale: 50%;
+    0% {
+        opacity: .1;
+        scale: 0%;
         transition: ease;
     }
-    to {
+    100% {
         opacity: 1;
         scale: 100%;
+        transition: ease;
     } 
 }
 section,article,h2,p {
@@ -1046,8 +1057,12 @@ section,article,h2,p {
     view-timeline-axis: block;
     animation-timeline: --image;
     animation-name: show;
-    animation-range: entry 25% cover 20%;
+    animation-range: entry 5% cover 20%;
     animation-fill-mode: both;
 }
 
-
+@media (max-width: 768px){
+    .concep2 {
+        font-size: 10px;
+    }
+}

@@ -23,15 +23,66 @@
         <article id="concep1">Concepto</article>
     </div>
     <h2 id="capadetitulo">Generaciones de los tomógrafos</h2>
-    <section class="hx">
-        <div class="gen1"><article class="concep2">Generación 1</article></div>
-        <div class="gen2"><article class="concep2">Generación 2</article></div>
-        <div class="gen3"><article class="concep2">Generación 3</article></div>
-        <div class="gen4"><article class="concep2">Generación 4</article></div>
-        <div class="gen5"><article class="concep2">Generación 5</article></div>
-        <div class="gen6"><article class="concep2">Generación 6</article></div>
-        <div class="gen7"><article class="concep2">Generación 7</article></div>
-    </section>
+    <!-- another 2 -->
+<section class="containerx">
+    <article class="cardd">
+        <div class="card_header">
+            <h2>Generación 1</h2>
+        </div>
+        <div class="card_footer">
+            <p>Solo hacia movimientos de Traslación y Rotación. Giraba con solo solo un detector hasta completar una vuelta de 180°, lo cual duraba 5 min aproximadamente.</p>
+        </div>
+    </article>
+    <article class="cardd">
+        <div class="card_header">
+            <h2>Generación 2</h2>
+        </div>
+        <div class="card_footer">
+            <p>Solo hacia movimientos de Traslación y Rotación con múltiples detectores (10 – 30), en un haz en Abanico (5º),Reduccion del tiempo en 2 min aproximadamente.</p>
+        </div>
+    </article>
+    <article class="cardd">
+        <div class="card_header">
+            <h2>Generación 3</h2>
+        </div>
+        <div class="card_footer">
+            <p>Recreaba movimiento de Rotación y Rotacion(doble rotación), en un arco de detectores (300 - 500) que formaban angulos de 25º - 35º. Su rotacion se hacia en 360°.</p>
+        </div>
+    </article>
+    <article class="cardd">
+        <div class="card_header">
+            <h2>Generación 4</h2>
+        </div>
+        <div class="card_footer">
+            <p>Se crean 2 modelos; Uno que hacia movimientos de Rotacion-Estacionario y otro de Rotacion-Nutacion. El anillo era fijo de Detectores (R/E).</p>
+        </div>
+    </article>
+    <article class="cardd">
+        <div class="card_header">
+            <h2>Generación 5</h2>
+        </div>
+        <div class="card_footer">
+            <p>Se crea el Tomógrafo Helicoidal, el cual constaba de adquisición única de datos con detectores estacionarios. El desplazamiento del haz de electrones era hacia el ánodo semicircular de tungsteno. Esta generación se caracteriza por ser monocorte.</>
+        </div>
+    </article>
+    <article class="cardd">
+        <div class="card_header">
+            <h2>Generación 6</h2>
+        </div>
+        <div class="card_footer">
+            <p>Anillo de deslizamiento en un sistema que puede girar continuamente alrededor de un área móvil que contiene al objeto. Esta generación se caracteriza por ser multicorte</p>
+        </div>
+    </article>
+    <article class="cardd">
+        <div class="card_header">
+            <h2>Generación 7</h2>
+        </div>
+        <div class="card_footer">
+            <p>Contiene una matriz de múltiples detectores y una fuente de rayos-X que emite haces de forma cónica.</p>
+        </div>
+    </article>
+</section>
+
     <section class="box">
         <div><p class="age">1971</p></div>
         <div><p class="age">1972</p></div>
@@ -563,74 +614,203 @@
         </p>
     </section>
     <h2 id="capadetitulo">Calidad de Imagen</h2>
-    <section>
+    <section class="septima0">
         <p>Los principales factores que influyen en la calidad de imagen, ya sea en un tomógrafo
             de simple fila de detectores o multislice, son la resolución espacial y la resolución de
             densidad. </p>
-        <article>
-            <h2>Resolución de densidad</h2>
-            <p>Es la capacidad de diferenciar los coeficientes de atenuación de piezas adyacentes de
-                tejido. Una desviación estándar (б) de estos valores se traduce en la imagen como ruido,
-                influyendo en este el flujo de fotones, la dispersión de RX, el tamaño del voxel, entre
-                otros.</p>
-        </article>
-        <article>
-            <h2>Resolución espacial</h2>
-            <p>Es una medida de la representación de estructuras anatómicas. Suele describirse en
-                términos de anchura total a mitad del máximo de altura (FHWM). Este parámetro es la
-                medida de la exactitud con la que se produce un punto en la imagen. <span> A menor FHWM,
-                mejor resolución. </span><br><br>
-                La función de transferencia de modulación (FTM) (adquirida luego de hacer la
-                transformada de fourier de la FHWM), representa la fidelidad relativa de la imagen en
-                comparación con el objeto real. <br><br>
-                Factores que influyen: filtro utilizado en la reconstrucción, espesor de corte,
-                nº de proyecciones, tamaño de la matriz, punto focal del tubo de RX.  <br><br>
-                El espesor de corte es el primer parámetro que afecta la resolución en el eje Z.
-                Un pequeño espesor de corte, Ej. 0.5/0.7 mm, produce datos en 3D excelentes con
-                mínimos artefactos; sin embargo también un pequeño espesor de corte incrementa el
-                tiempo de examen y reduce la eficiencia geométrica del scan, con el último efecto
-                haciéndose más notable en tomógrafos de 4 cortes. <br><br>
-                La eficiencia geométrica se define como el porcentaje de la relación del espesor
-                nominal total de todos los cortes adquiridos simultáneamente y del FHWM del área
-                irradiada a lo largo del eje Z, dicho en otras palabras porcentaje de radiación que es
-                usado para la reconstrucción de la imagen.  <br><br>
-                Como en TC secuencial, a mayor espesor de corte reconstruido, menor resolución de
-                contraste en la imagen; a menor espesor de corte, mejor resolución espacial. Si el
-                espesor de corte es grande las imágenes pueden ser afectadas por artefacto debido al
-                efecto de volumen parcial en el corte; si el espesor de corte es pequeño (Ej. 1mm) los
-                cortes pueden ser afectados por ruido, por lo tanto es importante encontrar un equilibrio
-                entre ambos parámetros. <br><br>
-                La emisión de RX antes de ser atenuada por un objeto, tiene un área de mayor o menor
-                intensidad, referida como la máxima emisión (del inglés full beam) y un área con
-                reducción gradual, refiriéndose este último a la penumbra. <br><br>
-                Para un equipo de TC de corte único, la fila de detectores abarca la emisión de RX total,
-                incluyendo la emisión máxima y la penumbra, su eficiencia geométrica es del 100%;
-                mientras que para la adquisición de datos de equipos multislice, el área de penumbra no
-                es detectada y entonces no se utiliza en la reconstrucción de la imagen. Esto implica una
-                reducción en la eficiencia geométrica. <br><br>
+        <article class="sept">
+            <h2>Homogeneidad de imagen (linealidad)</h2>
+            <p>En TC se usan las unidades Hounsfield para representar
+            las diferentes densidades de los tejidos;
+            por ejemplo, el agua tiene un valor 0, el hueso, un
+            valor +1.000, y el aire, un valor −1.000. <br><br>
+            Todos los píxeles que contengan agua deberían
+            tener una densidad con un valor 0, ya que representan
+            el mismo material; es decir, el valor de
+            los píxeles debe ser uniforme en toda la superficie
+            de la imagen reconstruida. Es lo que se denomina
+            homogeneidad de la imagen. <br><br>
+            La falta de homogeneidad en la imagen indica
+            que el equipo de TC no funciona bien o que está
+            desalineado. Si la desviación es pequeña, los
+            valores numéricos de TC no serán precisos pero
+            el efecto sobre la imagen puede ser muy pequeño.
+            No obstante, esta pequeña desviación puede
+            afectar al análisis cuantitativo del tejido mediante
+            los valores de atenuación de los píxeles. <br><br>
+            Es muy importante realizar calibraciones periódicas
+            para comprobar que el agua sigue siendo
+            representada por el cero y los restantes materiales
+            por sus números correspondientes de TC. <br><br>
+            Se recomienda una calibración diaria mediante
+            la utilización de fantomas.
             </p>
-            <img src="tc/RE.png">
-            <p>Para equipos de 4 cortes la eficiencia geométrica es pobre cuando se compara con
-                equipos de 16 cortes, debido a la cantidad de GAPS. <br><br>
-                En uno u otro grado, todos los parámetros técnicos en TC impactan en la calidad de
-                imagen. Es importante variarlos en forma apropiada para optimizar el estudio, ósea
-                adaptar las secuencias para obtener los objetivos deseados. 
-                </p>
         </article>
-        <article>
-            <h2>Factores técnicos</h2>
+        <article class="sept">
+            <h2>Resolución de bajo contraste</h2>
+            <p>El contraste o resolución de bajo contraste es
+            la diferencia del tono de gris entre un punto y
+            otro de la imagen, un aspecto muy importante
+            en la calidad de la imagen. Permite visualizar y
+            diferenciar objetos o estructuras muy próximos de
+            muy bajo contraste con pequeñas diferencias en
+            su densidad, independientemente de su tamaño
+            y forma. <br><br>
+            La resolución de contraste es la capacidad
+            de discriminación entre estructuras de distinta
+            densidad, sea cual sea su forma y tamaño. <br></br>
+            <span>Un ejemplo es una lesión en un riñón rodeada de
+            tejido sano: para ver la lesión se tendrían que tener
+            diferentes densidades entre el objeto y el fondo,
+            por lo que la resolución de bajo contraste se refiere
+            a la sensibilidad del sistema para distinguir
+            diferentes densidades parecidas entre sí</span> <br><br>
+            En un equipo de TC una diferencia del 1%
+            en el coeficiente de atenuación lineal entre dos
+            estructuras corresponde a 10 UH de diferencia. <br><br>
+            El coeficiente de atenuación de energía depende
+            de la energía del fotón, del número atómico
+            del tejido irradiado y de la densidad de la
+            estructura explorada. Todo ello le atribuye una
+            UH en cada píxel, con un valor numérico que es
+            fácilmente diferenciable del valor numérico aportado
+            por las estructuras de los tejidos vecinos. La
+            escala de grises por unidades independientes
+            de la TC permite al equipo distinguir mejor estructuras
+            que sean similares y de composición
+            parecida. <br><br>
+            La resolución de bajo contraste está limitada
+            por el tamaño, la uniformidad del objeto
+            y el ruido del sistema.
+            </p>
+        </article>
+        <article class="sept">
+            <h2>Resolución espacial</h2>
+            <p>La resolución espacial se define como la distancia
+            mínima entre dos puntos de un objeto para poder
+            ser identificados como dos estructuras diferentes,
+            es decir, la capacidad de discernir detalles entre
+            estructuras de pequeño tamaño. En la TC viene
+            determinada por el tamaño del vóxel, por lo que
+            si se reduce el grosor de corte y el tamaño del
+            campo de visión y se aumenta la matriz, aumentará
+            la resolución espacial. <br><br>
+            Es importante una buena resolución espacial
+            cuando se estudian estructuras de tamaño milimétrico. <br><br>
+            La resolución espacial es la capacidad
+            de diferenciar objetos de alto contraste
+            lo más pequeños y cercanos entre sí. <br><br>
+            dos métodos: de forma directa (con un fantoma
+            de material acrílico, el cual tiene en su interior
+            unas tiras de metal separadas unos mm) o analizando
+            la propagación de la información dentro
+            del sistema. Este análisis de los datos se conoce
+            como función de transferencia de modulación.
+            Al cuantificar los datos se puede saber el rendimiento
+            de un equipo de TC o compararlo con
+            otro equipo. <br><br>
+            Hay que tener en cuenta que la capacidad del
+            sistema para representar con precisión un objeto
+            varía según el tamaño del objeto. <br><br>
+            La resolución espacial se ve afectada por la
+            calidad de los datos brutos (raw data) y el método
+            de reconstrucción. Los factores que afectan a
+            la calidad de los datos brutos son el tamaño de la
+            matriz, el campo de visión y el tamaño del píxel. <br><br>
+            El tamaño de la matriz (la cantidad de píxeles
+            contenidos en ella) y del campo de visión
+            determinan el tamaño del píxel, que juega un
+            papel muy importante en la resolución de la
+            imagen. Además, el tamaño del campo de visión
+            determina la cantidad de datos brutos que serán
+            usados en la reconstrucción de la imagen: al aumentar
+            el tamaño del campo de visión también
+            aumenta el tamaño del píxel, por lo que se perderá
+            resolución. <br><br>
+            En cada píxel hay información de las unidades
+            Hounsfield (diferentes densidades) de cada tejido
+            contenido en él, de tal manera que si hay un área
+            más pequeña que el píxel, su densidad será despreciada
+            por la de otro tejido de mayor tamaño,
+            dando lugar a una pérdida de información. <br><br>
+            En general, todo lo que mejora la resolución
+            espacial empeora la resolución de contraste.                
+            </p>
+        </article>
+        <article class="sept">
+            <h2>Ruido</h2>
+            <p>Si se realiza un barrido de un medio perfectamente
+            homogéneo, como es un fantoma o un maniquí
+            de agua, el valor de cada uno de los píxeles de
+            esa imagen debería ser cero. Pero esto no ocurre,
+            porque la resolución de bajo contraste no es
+            perfecta debido a la variación de la intensidad
+            como consecuencia de la variación del número
+            de fotones que llegan al receptor. Por tanto, la
+            medida de todos los valores de los píxeles será cero,
+            pero algunos darán valores superiores y otros
+            inferiores a cero. Esta variación de los números
+            en torno al cero es el ruido del sistema. Si todos
+            los píxeles presentaran el mismo valor, el ruido
+            del sistema sería cero. <br><br>
+            El ruido se define como la desviación estándar
+            porcentual de los píxeles obtenidos al realizar un
+            barrido de un recipiente de agua. <br><br>
+            El ruido de la imagen está determinado por
+            los fotones de rayos X que llegan al detector y
+            que contribuyen en la generación de la imagen.
+            Es inversamente proporcional a la cantidad de
+            fotones que llegan al detector, es decir, cuanto
+            menor sea la cantidad de fotones que llegan al
+            detector, mayor será el ruido de la imagen. <br><br>
+            El ruido del sistema depende de distintos
+            factores: </p>
+            <li>Tamaño del píxel</li>
+            <li>Grosor de corte</li>
+            <li>Eficacia de detectores</li>
+            <li>Tensión de pico y filtrado</li>
+            <li>Dosis que recibe el paciente</li>
+            <p>Si se hace una adquisición con una dosis muy pequeña
+            y grosor de corte fino, se aumenta el ruido
+            de la imagen. El ruido se puede evitar aumentando
+            la dosis del paciente, así como el grosor
+            de corte, aunque con ello se pierde resolución
+            espacial. <br><br>
+            <span>El ruido es proporcional a los mAs.</span>
+            </p>
+        </article>
+        <article class="sept">
+            <h2>Resolución temporal</h2>
+            <p>La resolución temporal es la velocidad a la que
+            se adquieren los datos. Está controlada por la
+            velocidad de rotación del gantry y se mide en
+            milisegundos (ms). Una buena resolución temporal
+            es vital para evitar la borrosidad de la imagen
+            provocada por el movimiento de órganos (por
+            ejemplo, corazón) y estudios angiográficos con
+            contraste yodado.</p>
+        </article>
+        <article class="sept" style="width: 100%;">
+            <h2>Parámetros modificables por el operador</h2>
             <p>Son aquellos que se seleccionan antes de hacerse el estudio, y no pueden ser alterados
-                luego de la adquisición de la imagen.
-                Ellos son: mAs, Kv, resolución, tiempo de rotación, colimación, pitch. </p>
+            luego de la adquisición de la imagen.
+            Ellos son:</p>
+            <li>Corriente del tubo (mA).</li>
+            <li>Voltaje del tubo (kV).</li>
+            <li>Colimación: grosor de corte adquirido (eje z).</li>
+            <li>Campo de visión.</li>
+            <li>Tiempo de exploración y cobertura.</li>
+            <li>Modo helicoidal o secuencial.</li>
+            </p>
         </article>
-        <article>
+        <article class="sept">
             <h2>Factores de procesamiento</h2>
             <p>Son los parámetros responsables de procesar los datos crudos volumétricos,
                 recolectados durante el estudio, para la obtención de la imagen.
                 Ellos son: algoritmos de reconstrucción, matriz de imagen, incremento en corte de
                 reconstrucción. </p>
         </article>
-        <article>
+        <article class="sept">
             <h2>Factores de tiempo</h2>
             <p>Son aquellos parámetros que se relacionan con la reconstrucción de la imagen y los
                 tiempos de procesamiento.
@@ -639,110 +819,323 @@
         </article>
     </section>
     <h2 id="capadetitulo">Artefactos</h2>
-    <section class="septima">
-        <h2>Se llama artefactos a toda imagen distorsionada y no deseada que afecta a la calidad de imagen.</h2>
-        <article class="septima-1">
-            <h2>Artefacto de los blancos por alteración de los detectores o error de estabilidad</h2>
-            <p>Ocurren por una alteración en la calibración y balance de los detectores2,3,7,8. Si estos no se encuentran intercalibrados o alineados, la proyección individual de cada anillo de datos es diferente, causando múltiples anillos concéntricos de intensidad variable (“rueda de carro”)2,3,5 (fig. 2). También aparecen cuando el haz de rayos no está centrado sobre los detectores5.
-            El mantenimiento y la calibración periódicos del equipo de TC evita su aparición2,3,5,7.
-            </p>
+    <p class="arte">Se llama artefactos a toda imagen distorsionada y no deseada que afecta a la calidad de imagen.</p>
+    <article class="septima-1">
+        <h2>Artefacto de los blancos por alteración de los detectores o error de estabilidad</h2>
+        <p>Ocurren por una alteración en la calibración y balance de los detectores. Si estos no se encuentran intercalibrados o alineados, la proyección individual de cada anillo de datos es diferente, causando múltiples anillos concéntricos de intensidad variable (“rueda de carro”). También aparecen cuando el haz de rayos no está centrado sobre los detectores.
+        El mantenimiento y la calibración periódicos del equipo de TC evita su aparición.
+        </p>
+        <article class="artefac">
             <img src="tc/artefactodelosdetectores.png">
         </article>
-        <article class="septima-1">
-            <h2>Movimientos del paciente</h2>
-            <p>Se producen por movimientos del paciente (respiración, latidos cardíacos, temblor, excitación, nerviosismo, deglución, peristaltismo, etc.)5,7 y suelen aparecer en los escaneos donde es necesario mantener la respiración, especialmente en los estudios de tórax2,8.
-            Se aprecian como bandas blancas y negras intercaladas, manchas o lunares negros, pérdida de la resolución, desdoblamiento de los contornos de las diferentes estructuras o distorsión de la anatomía</p>
+    </article>
+    <article class="septima-1">
+        <h2>Movimientos del paciente</h2>
+        <p>Se producen por movimientos del paciente (respiración, latidos cardíacos, temblor, excitación, nerviosismo, deglución, peristaltismo, etc.) y suelen aparecer en los escaneos donde es necesario mantener la respiración, especialmente en los estudios de tórax.
+            Se aprecian como bandas blancas y negras intercaladas, manchas o lunares negros, pérdida de la resolución, desdoblamiento de los contornos de las diferentes estructuras o distorsión de la anatomía.</p>
+        <article class="artefac">
             <img src="tc/movpa.png">
         </article>
-        <article class="septima-1">
-            <h2>Factores ambientales </h2>
-            <p>La humedad o temperatura ambiente, así como el exceso de partículas de polvo dentro del ordenador, causan errores en el algoritmo de reconstrucción2. La colocación de un equipo de aire acondicionado y la higiene en la sala del tomógrafo y consola evitan la presencia de estas distorsiones.</p>
-        </article>
-        <article class="septima-1">
-            <h2>Errores de espiral o “de remolino” </h2>
-            <p>En los tomógrafos helicoidales la mesa de examen avanza continuamente, mientras el tubo de rayos rota alrededor del paciente. La fila de detectores pasa por el plano de interés, y la reconstrucción oscila entre las medidas de un solo detector y la interpolación de dos o más detectores. Si existe una gran diferencia de contraste entre estos, se crea una imagen distorsionada con forma de anillos concéntricos y espiculados, hipo e hiperdensos5,7 (fig. 14). Estos son más evidentes en los cortes finos.</p>
+    </article>
+    <article class="septima-1">
+        <h2>Factores ambientales </h2>
+        <p>La humedad o temperatura ambiente, así como el exceso de partículas de polvo dentro del ordenador, causan errores en el algoritmo de reconstrucción. La colocación de un equipo de aire acondicionado y la higiene en la sala del tomógrafo y consola evitan la presencia de estas distorsiones.</p>
+    </article>
+    <article class="septima-1">
+        <h2>Errores de espiral o “de remolino” </h2>
+        <p>En los tomógrafos helicoidales la mesa de examen avanza continuamente, mientras el tubo de rayos rota alrededor del paciente. La fila de detectores pasa por el plano de interés, y la reconstrucción oscila entre las medidas de un solo detector y la interpolación de dos o más detectores. Si existe una gran diferencia de contraste entre estos, se crea una imagen distorsionada con forma de anillos concéntricos y espiculados, hipo e hiperdensos. Estos son más evidentes en los cortes finos.</p>
+        <article class="artefac">
             <img src="tc/espiral.png">
         </article>
-        <article class="septima-1">
-            <h2>Presencia de cuerpos extraños/material médico</d>
-            <p>Se originan por elementos o instrumentos quirúrgicos compuestos por algún metal, como prótesis dentales, material de osteosíntesis, piercings, joyas, aparatos de vigilancia, cables, utensilios médicos, semillas de radioterapia, contrastes orales o endovenosos, y accesorios de ropa (botones, cierres, etc.)5,8,10. Aunque en menor medida, también puede generarse por el gas (p. ej. a nivel de la cámara gástrica).
-            Este artificio se reconoce porque el elemento de alta densidad genera un halo de falsa absorción en una o varias direcciones, como consecuencia de la variación abrupta de densidad5. Aparece como bandas o “rayos de sol”, forzando a los detectores a operar en una región de respuesta no lineal2,3 (figs. 5–7), o como líneas de transición hipo e hiperdensas centradas en las imágenes metálicas presentes en el corte estudiado5,7.
-            </p>
-            <img src="tc/cuerpoextraño.png">
-        </article>
-        <article class="septima-1">
-            <h2>Ruido (quantum mottle) </d>
-            <p>Es una falla del cálculo estadístico que genera rayas y líneas espiculadas dispuestas al azar, preferentemente en la dirección de mayor atenuación7. Al aumentar el ruido, los objetos con alta densidad (como el hueso) se manifiestan con bajo contraste, mientras que los tejidos blandos tienen una pobre visualización.
-            El ruido disminuye aumentando el miliamperaje o combinando la información de distintos escaneos, como el contraste de fases7.</p>
-        </article>
-        <article class="septima-1">
-            <h2>Artefacto por entrada de flujo</h2>
-            <p>Se produce a nivel de las venas axilar o subclavia en las TC de tórax con contraste intravascular, como consecuencia del corto intervalo entre la administración del contraste endovenoso y el comienzo de la adquisición de los datos8. La distorsión de la imagen, con aumento de la densidad, impide la correcta valoración de la anatomía axilar (fig. 8), por lo que, para que el artificio desaparezca, hay que retrasar unos segundos el inicio del escaneo.
-            </p>
+    </article>
+    <article class="septima-1">
+        <h2>Presencia de cuerpos extraños/material médico</h2>
+        <p>Se originan por elementos o instrumentos quirúrgicos compuestos por algún metal, como prótesis dentales, material de osteosíntesis, piercings, joyas, aparatos de vigilancia, cables, utensilios médicos, semillas de radioterapia, contrastes orales o endovenosos, y accesorios de ropa (botones, cierres, etc.). Aunque en menor medida, también puede generarse por el gas (p. ej. a nivel de la cámara gástrica).
+        Este artificio se reconoce porque el elemento de alta densidad genera un halo de falsa absorción en una o varias direcciones, como consecuencia de la variación abrupta de densidad. Aparece como bandas o “rayos de sol”, forzando a los detectores a operar en una región de respuesta no lineal, o como líneas de transición hipo e hiperdensas centradas en las imágenes metálicas presentes en el corte estudiado.
+    </p>
+    <article class="artefac">
+        <img src="tc/cuerpoextraño.png">
+    </article>
+    </article>
+    <article class="septima-1">
+        <h2>Ruido (quantum mottle) </h2>
+        <p>Es una falla del cálculo estadístico que genera rayas y líneas espiculadas dispuestas al azar, preferentemente en la dirección de mayor atenuación   . Al aumentar el ruido, los objetos con alta densidad (como el hueso) se manifiestan con bajo contraste, mientras que los tejidos blandos tienen una pobre visualización.
+        El ruido disminuye aumentando el miliamperaje o combinando la información de distintos escaneos, como el contraste de fases.</p>
+    </article>
+    <article class="septima-1">
+        <h2>Artefacto por entrada de flujo</h2>
+        <p>Se produce a nivel de las venas axilar o subclavia en las TC de tórax con contraste intravascular, como consecuencia del corto intervalo entre la administración del contraste endovenoso y el comienzo de la adquisición de los datos. La distorsión de la imagen, con aumento de la densidad, impide la correcta valoración de la anatomía axilar, por lo que, para que el artificio desaparezca, hay que retrasar unos segundos el inicio del escaneo.
+        </p>
+        <article class="artefac">
             <img src="tc/flujo.png">
         </article>
-        <article class="septima-1">
-            <h2>Proyección incompleta</h2>
-            <p>Aparece cuando una parte del paciente se encuentra fuera del área de interés, pero igualmente es escaneada. La computadora, al no tener suficientes datos para reconstruir esa región, genera artificios o bandas espiculadas. Sucede, por ejemplo, cuando se estudia el tórax o abdomen superior y el paciente no puede elevar los brazos3 (fig. 10). También puede constatarse cuando el haz de rayos atraviesa un objeto metálico.</p>
+    </article>
+    <article class="septima-1">
+        <h2>Proyección incompleta</h2>
+        <p>Aparece cuando una parte del paciente se encuentra fuera del área de interés, pero igualmente es escaneada. La computadora, al no tener suficientes datos para reconstruir esa región, genera artificios o bandas espiculadas. Sucede, por ejemplo, cuando se estudia el tórax o abdomen superior y el paciente no puede elevar los brazos. También puede constatarse cuando el haz de rayos atraviesa un objeto metálico.</p>
+        <article class="artefac">
             <img src="tc/poyectincompleta.png">
         </article>
-        <article class="septima-1">
-            <h2>Artificio de desborde de campo o salida de campo</h2>
-            <p>Se objetivan zonas o áreas hiperdensas en el borde o límite de la imagen. Estos artefactos se visualizan cuando la región a estudiar o el cuerpo del paciente salen o exceden el campo de medida5,7.
-            Se evitan adaptando el campo de medida al volumen corporal del paciente. En casos de obesidad puede ser difícil, pero en los nuevos equipos multicorte existen soluciones informáticas (algoritmos de reconstrucción) para solucionarlo5,7.</p>
-        </article>
-        <article class="septima-1">
-            <h2>Efecto del haz cónico</h2>
-            <p>Con el incremento de los números de cortes por rotación se requiere una mayor colimación, y el haz de rayos pasa de una configuración cónica a una en abanico (se expande), produciendo un artefacto similar al volumen parcial3.
-            Se origina en los equipos multicorte debido a la elevada conicidad del haz de rayos (multilíneas) y a la utilización de un paso de hélice elevado3,5. A mayor número de detectores, mayor será el artificio3.</p>
-        </article>
-        <article class="septima-1">
-            <h2>Artefacto escalonado</h>
-            <p>Se produce en las imágenes multiplanares o 3D reformateadas, manifestándose en los bordes de la estructura estudiada como líneas superpuestas, semejantes a los peldaños de una escalera3,11.
-            Aparece en las imágenes que necesitan una gran colimación y una reconstrucción no solapada3 (figs. 11 y 12), y se puede eliminar virtualmente con cortes finos reformateados.
-            </p>
+    </article>
+    <article class="septima-1">
+        <h2>Artificio de desborde de campo o salida de campo</h2>
+        <p>Se objetivan zonas o áreas hiperdensas en el borde o límite de la imagen. Estos artefactos se visualizan cuando la región a estudiar o el cuerpo del paciente salen o exceden el campo de medida.
+        Se evitan adaptando el campo de medida al volumen corporal del paciente. En casos de obesidad puede ser difícil, pero en los nuevos equipos multicorte existen soluciones informáticas (algoritmos de reconstrucción) para solucionarlo.</p>
+    </article>
+    <article class="septima-1">
+        <h2>Efecto del haz cónico</h2>
+        <p>Con el incremento de los números de cortes por rotación se requiere una mayor colimación, y el haz de rayos pasa de una configuración cónica a una en abanico (se expande), produciendo un artefacto similar al volumen parcial.
+        Se origina en los equipos multicorte debido a la elevada conicidad del haz de rayos (multilíneas) y a la utilización de un paso de hélice elevado. A mayor número de detectores, mayor será el artificio.</p>
+    </article>
+    <article class="septima-1">
+        <h2>Artefacto escalonado</h2>
+        <p>Se produce en las imágenes multiplanares o 3D reformateadas, manifestándose en los bordes de la estructura estudiada como líneas superpuestas, semejantes a los peldaños de una escalera.
+        Aparece en las imágenes que necesitan una gran colimación y una reconstrucción no solapada, y se puede eliminar virtualmente con cortes finos reformateados.
+        </p>
+        <article class="artefac">
             <img src="tc/escalonado.png">
         </article>
-        <article class="septima-1">
-            <h2>Artefacto en “cebra”</h2>
-            <p>Se observa como tenues rayas escalonadas en reconstrucciones multiplanares y 3D en el plano sagital o coronal. Se genera por un excesivo grosor del corte, que origina una inhomogeneidad a lo largo del eje Z3,7 (fig. 13). Para reducirlo, se emplean algoritmos informáticos3,7.</p>
+    </article>
+    <article class="septima-1">
+        <h2>Artefacto en “cebra”</h2>
+        <p>Se observa como tenues rayas escalonadas en reconstrucciones multiplanares y 3D en el plano sagital o coronal. Se genera por un excesivo grosor del corte, que origina una inhomogeneidad a lo largo del eje Z. Para reducirlo, se emplean algoritmos informáticos.</p>
+        <article class="artefac">
             <img src="tc/cebra.png">
         </article>
-        <article class="septima-1">
-            <h2>Artefactos en banda o anillos</h2>
-            <p>son causados por una ineficiente calibración de los
-            detectores, movimientos del paciente, presencia de objetos metálicos o radiodensos,
-            mientras que un error en la alineación del tubo-detector dará una borrosidad de bordes
-            en la imagen. </p>
+    </article>
+    <article class="septima-1">
+        <h2>Artefactos en banda o anillos</h2>
+        <p>son causados por una ineficiente calibración de los
+        detectores, movimientos del paciente, presencia de objetos metálicos o radiodensos,
+        mientras que un error en la alineación del tubo-detector dará una borrosidad de bordes
+        en la imagen. </p>
+    </article>
+    <article class="septima-1">
+        <h2>Penumbra geométrica, geometría de los rayos X por descuido o falta de linealidad</h2>
+        <p>Una inadecuada alineación de los rayos X (Rx) del tubo con los detectores puede generar una imagen borrosa con resolución espacial limitada. Se manifiesta como una penumbra relacionada con la medida del foco, ya que a menor tamaño, se obtiene menor penumbra geométrica.
+        Un correcto y periódico mantenimiento y calibración del tomógrafo o una colimación secundaria eficaz reducen el efecto.</p>
+    </article>
+    <article class="septima-1">
+        <h2>Error parcial de volumen</h2>
+        <p>Cuando los tejidos de diferente absorción ocupan el mismo voxel, la intensidad del píxel corresponde al promedio de las densidades de las estructuras del voxel. Este error se produce cuando el haz de rayos atraviesa estructuras heterogéneas y de alta densidad, dispuestas de forma paralela al eje de giro del sistema.
+            Suele presentarse en la base del cráneo a nivel de los peñascos y en la protuberancia occipital interna. </p>
+            <article class="artefac">
+                <img src="tc/errorparcialñ.png">
+            </article>
+    </article>
+    <article class="septima-1">
+        <h2>Endurecimiento del haz (del ingles beam hardening)</h2>
+        <p>Se genera por la absorción preferencial de los fotones de baja energía del rayo en los tejidos. Este efecto es más pronunciado en áreas de gran atenuación (como el hueso) y sucede cuando, al atravesar el haz de rayos, las estructuras encuentran transiciones muy marcadas de espesor y densidad5.   
+            En este caso, se aprecian líneas o bandas espiculadas e intercaladas, claras y oscuras, como una sombra debajo de las costillas o como un aumento de sombras espiculadas en el mediastino, la cintura escapular o la base del cráneo. </p>
+            <article class="artefac">
+                <img src="tc/endurecimientohaz.png">
+            </article>
+        </d>
+    </article>
+    <h2 id="capadetitulo">Reconstrucción de la imagen</h2>
+    <section class="octava1">
+        <article class="octa1">
+            <h2>Reconstrucción multiplanar</h2>
+            <p>La reconstrucción multiplanar (MPR, multiplanar
+            reconstruction) no es una reconstrucción 3D, sino
+            una deformación geométrica del volumen de datos.
+            Por su facilidad de utilización, rapidez de
+            implementación y cantidad de información suministrada,
+            se encuentra entre las de mayor uso
+            en la práctica diaria.<br><br>
+            Las MPR son imágenes 2D reconstruidas en
+            un plano arbitrario, generalmente axial, coronal
+            y sagital, a partir de los datos brutos de
+            la adquisición o de una hélice axial de grosor e incremento
+            suficientemente pequeño. <br><br>
+            Permite moverse dentro de estos planos hasta
+            obtener la posición deseada para proceder a
+            realizar las reconstrucciones más complejas. <br><br>
+            La MPR muestra un plano dentro de los datos
+            del volumen en 3D y presenta los datos en ese
+            plano como una imagen. <br><br>
+            </p>
         </article>
-        <article class="septima-1">
-            <h2>Penumbra geométrica, geometría de los rayos X por descuido o falta de linealidad</h2>
-            <p>Una inadecuada alineación de los rayos X (Rx) del tubo con los detectores puede generar una imagen borrosa con resolución espacial limitada2. Se manifiesta como una penumbra relacionada con la medida del foco, ya que a menor tamaño, se obtiene menor penumbra geométrica5.
-            Un correcto y periódico mantenimiento y calibración del tomógrafo o una colimación secundaria eficaz reducen el efecto5.</p>
+        <article class="octa2">
+            <h2>Reconstrucción de máxima intensidad de proyección</h2>
+            <p>La reconstrucción de máxima intensidad (MIP,
+            máximum intensity projection) es una técnica de representación
+            que crea una imagen bidimensional
+            a partir de la información tridimensional incluida
+            en un volumen determinado. Partiendo de una
+            línea de visión, similar a una proyección radiológica,
+            se representan en una imagen bidimensional
+            los vóxeles más contrastados que conforman el
+            volumen seleccionado. De esta forma, en la imagen
+            final quedan representadas las estructuras
+            del volumen estudiado que mayor atenuación
+            han presentado. <br><br>
+            Sólo se muestran en la imagen los píxeles
+            de mayor intensidad en el grosor reconstruido <br><br>
+            Es un método para presentación 3D a lo largo
+            de la dirección de visualización, a través de un
+            volumen. En la imagen, los resultados dependerán
+            del vóxel con la absorción más alta de cada
+            área. <br><br>
+            La MIP trata el objeto como si fuese traslúcido,
+            muestra los píxeles de máxima intensidad de
+            cada corte, de tal modo que es la reconstrucción
+            requerida para estructuras de máxima densidad/
+            intensidad, y no muestra la profundidad de las
+            estructuras, de tal manera que las estructuras
+            vasculares anteriores ocultan las posteriores <br><br>
+            En la reconstrucción se resaltan los vóxeles de
+            máxima intensidad (por lo general contraste y
+            calcio) en escala de grises. <br><br>
+            La principal desventaja de la MIP proviene
+            del calcio en los vasos que pasan cerca de
+            estructuras óseas o de las placas ateromatosas
+            calcificadas, donde se artefacta la exploración. <br><br>
+            </p>
         </article>
-        <article class="septima-1">
-            <h2>Error parcial de volumen</h2>
-            <p>Cuando los tejidos de diferente absorción ocupan el mismo voxel, la intensidad del píxel corresponde al promedio de las densidades de las estructuras del voxel2,5. Este error se produce cuando el haz de rayos atraviesa estructuras heterogéneas y de alta densidad, dispuestas de forma paralela al eje de giro del sistema.
-            Suele presentarse en la base del cráneo a nivel de los peñascos y en la protuberancia occipital interna (fig. 9). </p>
-            <img src="tc/errorparcialñ.png">
+        <article class="octa3">
+            <h2>Reconstrucción de mínima intensidad de proyección</h2>
+            <p>Si la MPR realiza un promedio en toda la captura,
+            la mínima intensidad de proyección (MiniMIP)
+            busca en la adquisición las estructuras menos
+            densas, como por ejemplo el aire. En MiniMIP
+            solamente se utilizan y se muestran los valores de
+            atenuación menores, y sólo se muestran
+            en la imagen los píxeles de menor intensidad
+            en el grosor reconstruido. <br><br>
+            La imagen obtenida es un negativo de la MIP
+            y realza estructuras de baja densidad, mostrando
+            por ejemplo las características del atrapamiento
+            aéreo, enfisema o cualquier cavidad con aire,
+            como los pulmones o los senos paranasales. <br><br>
+            Es la base de la broncoscopia y la colonoscopia
+            virtuales. <br><br>
+            </p>
         </article>
-        <article class="septima-1">
-            <h2>Endurecimiento del haz (del ingles beam hardening)</h2>
-            <p>Se genera por la absorción preferencial de los fotones de baja energía del rayo en los tejidos. Este efecto es más pronunciado en áreas de gran atenuación (como el hueso)2,3,5,7 y sucede cuando, al atravesar el haz de rayos, las estructuras encuentran transiciones muy marcadas de espesor y densidad5.   
-            En este caso, se aprecian líneas o bandas espiculadas e intercaladas, claras y oscuras, como una sombra debajo de las costillas o como un aumento de sombras espiculadas en el mediastino, la cintura escapular o la base del cráneo2,3,5,7 </p>
-            <img src="tc/endurecimientohaz.png">
-            </d>
+        <article class="octa4">
+            <h2>Reconstrucción volumétrica</h2>
+            <p>La reconstrucción volumétrica (VR, volumen rendering)
+            es una representación 3D del estudio que
+            tiene en cuenta todos los vóxeles de la imagen.
+            Según sus valores de atenuación, se asignan distintos
+            grados de transparencia, brillo y color a
+            los distintos vóxeles que conforman la región
+            estudiada. <br></br>
+            Existen múltiples tipos de VR, orientados a
+            regiones o estructuras determinadas. Para diferenciar
+            entre las distintas estructuras, se asignan
+            colores diferentes en función de la densidad. El
+            resto de tejidos que conforman el volumen, menos
+            densos, se hacen transparentes, con lo que no
+            contribuyen a la imagen. <br><br>
+            La VR es la reconstrucción 3D que da mayor
+            cantidad y calidad de información, y por lo
+            tanto, la más utilizada en la práctica diaria,
+            sobre todo a la hora de representar estructuras
+            vasculares. <br><br>
+            La imagen se puede rotar para visualizarla desde
+            distintos puntos del espacio. También se pueden
+            controlar los grados de transparencia, color y
+            brillo de la imagen final, así como la dirección
+            de la fuente de iluminación. <br><br>
+            La VR contiene toda la información de un
+            vóxel, lo que le da ventaja frente a la MIP y a
+            las reconstrucciones de superficie sombreada. <br><br>
+            Funciona por porcentajes de tejido en el vóxel,
+            asignando a cada tejido un color y transparencia. <br><br>
+            La opacidad de cada vóxel define su grado de
+            visibilidad: <br><br>
+                <li>Opacidad 0: vóxeles totalmente transparentes,
+                    que no se verán en la imagen.</li>
+                <li>Opacidad 1: vóxeles totalmente opacos, que
+                    no dejan pasar la luz.</li>
+                <li>Opacidad intermedia: vóxeles con valores
+                    semitransparentes.</li>
+            </p>
         </article>
+        <article class="octa5">
+            <h2>Reconstrucción de superficie sombreada</h2>
+            <p>La reconstrucción de superficie sombreada (SSD,
+            shaded surface display) fue la primera técnica de
+            reconstrucción 3D utilizada. Este método muestra
+            la superficie de un órgano o de un hueso que ha
+            sido definida en unidades Hounsfield (UH) por
+            encima de un determinado valor de umbral. El
+            ángulo de visión y la localización de la hipotética
+            fuente de luz virtual son cruciales para obtener
+            reconstrucciones óptimas. <br><br>
+            Es una técnica rápida de reconstrucción pero
+            en realidad su utilidad se limita a la visualización
+            de hueso, que se encuentra en el extremo superior
+            de las curvas de atenuación, y en la práctica no
+            sirve para visualizar tejidos blandos, pues al bajar
+            el umbral para incluir estos tejidos se presentan
+            muchos artefactos y el hueso y los tejidos blandos
+            se muestran como un mismo tejido <br><br>
+            Por ello, la elección del valor del umbral debe
+            ser cuidadosa, ya que de lo contrario se puede
+            eliminar información valiosa de la imagen, e incluso
+            puede parecer que hay una patología allí
+            donde no la hay. <br><br>
+            La SSD muestra poca profundidad, y no se
+            observan las estructuras en el interior o por detrás
+            de la superficie. <br><br>
+            La principal desventaja de la SSD es que al
+            hacerse una media con la señal de los vóxeles,
+            si no se trata de un tejido muy homogéneo   
+            (hueso), da lugar a importantes artefactos. <br><br>
+            </p>
+        </article>
+        <div class="octa6">
+            <article class="mip0">
+                <img src="https://epos.myesr.org/posterimage/esr/seram2012/111914/media/457212" alt="">
+                <img src="https://www.researchgate.net/publication/237059852/figure/fig1/AS:601688578732060@1520465144413/High-resolution-axial-CT-scan-with-MIP-technique-that-highlighted-pulmonary-nodules.png" alt="">
+            </article>
+        </div>
+        <div class="octa7">
+            <article class="mip0">
+                <img src="https://static.wixstatic.com/media/25f683_2fd4e0d7ec5f4ede912fff2feb8e6abf~mv2.png/v1/fill/w_560,h_420,al_c,q_85,usm_0.33_1.00_0.00,enc_auto/25f683_2fd4e0d7ec5f4ede912fff2feb8e6abf~mv2.png">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS15Nniqi5ccsqX931jMmBmSQfzPNlqpI05h05ZUm3Hl1VVyX6oGvgX4RjJFVLX0HbMhqg&usqp=CAU">
+            </article>
+        </div>
+        <div class="octa8">
+            <article class="mip0">
+                <img src="https://ars.els-cdn.com/content/image/1-s2.0-S0033833808719696-gr1.jpg">
+                <img src="https://epos.myesr.org/posterimage/esr/seram2014/123980/media/568210">
+            </article>
+        </div>
+        <div class="octa9">
+            <article class="mip0">
+                <img src="https://1.bp.blogspot.com/-xLvrDfEPAsE/TyHK7k9vXVI/AAAAAAAAAoc/2xVcdSdB2rw/s400/VR+Aorta.png">
+                <img src="https://multimedia.elsevier.es/PublicationsMultimediaV1/item/multimedia/X0214098510884347:9v23n09-13188434fig13.jpg?idApp=UINPBA00004N">
+            </article>
+        </div>
+        <div class="octa10">
+            <article class="mip0">
+                <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSI15rwy0amo2LQnkeSCQ2gfkIsNKPM4gTARkjHsCupY5HaU23h">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0EtgCg4JK-szg-yNSeLwBpMFOsWkxzjjXDs8bKjHRxnc_OviP">
+            </article>
+        </div>
     </section>
+
+
+
+
+    
+
+
+
+
+
 </body>
 <footer>
-    <section>
-        <a id="underscore" href="https://www.instagram.com/edison_henriquez_i/"><i class="fa-brands fa-instagram fa-bounce fa-xl"></i></a>    
-            <i class="fa-solid fa-minus fa-rotate-90 fa-2xl"></i>
-        <a href="https://drive.google.com/drive/u/0/my-drive"><i class="fa-brands fa-google-drive fa-bounce fa-xl"></i></a>
+    <section class="ultimo0">
+        <div><a href="#fondo" class="inicio">Volver al Inicio</a></div>
     </section>
-    <div>
-        <button><a href="#fondo">Volver al inicio</a></button> 
-    </div>
+    <section class="ultimo">
+        <a id="underscore" href="https://www.instagram.com/edison_henriquez_i/" style="font-size: 40px;"><i class="fa-brands fa-instagram fa-bounce fa-xl"></i></a>    
+        <i class="fa-solid fa-minus fa-rotate-90 fa-2xl" style="font-size: 50px;"></i>
+        <a href="https://drive.google.com/drive/u/0/my-drive" style="font-size: 40px;"><i class="fa-brands fa-google-drive fa-bounce fa-xl"></i></a>
+    </section>
 </footer>
 </html>
