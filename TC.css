@@ -15,8 +15,8 @@ html{
 body{
     margin: 0 auto;
     max-width: 1800px;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 70px;
+    padding-right: 70px;
 }
 /* IMAGEN DE FONDO */
 /* #fondo{
@@ -103,6 +103,7 @@ body{
     position: relative;
     background-color: burlywood;
     overflow: hidden;
+    font-size: 2rem;
 }
 .img:hover::after {
     transform: translateY(0);
@@ -110,7 +111,6 @@ body{
 }   
 .img::after{
     content: "La tomografía computarizada, TC, es un procedimiento con imágenes que usa equipo especial de rayos X para crear imágenes detalladas, o exploraciones, de regiones internas del cuerpo. A veces, también se llama tomografía axial computarizada (TAC).";
-    font-size: 2rem;
     color: black;
     background-color:rgba(89, 72, 195);
     position: absolute;
@@ -143,219 +143,34 @@ body{
     justify-content: center;
     border: 1px solid red;
     padding: 10px;
+    transition: 0.3s ease;
 }
-
 .containerx {
     display: grid;
     gap: 30px;
     /* Change the order to see the evolution (The only problem is that auto-fit is not compatible with IE 🔥🔥IE🔥🔥) */
     ; /* Evolution level 1 -> responsive */
-    grid-template-columns: repeat(
-    auto-fit,
-    minmax(200px, 1fr)
-    ); /* Evolution level 2 -> responsive and card responsive */
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); /* Evolution level 2 -> responsive and card responsive */
     justify-content: center;
     justify-items: center;
     padding: 10px;
     /* align-items: flex-start; */
 }
-/* GENERACIONES */
-/* 1 */
-.hx{
-    display: flex;
+.cardd:hover{
+    background-color: #81499b;
 }
-.box{
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    padding: 10px 0px;
-    margin: 0;
-    font-size: 25px;
-    transition: text-shadow 1s ease;
-    background-color: rgba(5,7,12, 0.3);
-}
-.age:hover{
-    text-shadow: 0 .3rem .5rem rgb(8, 205, 244)
-}
-/* 1 */
-.hx div article{
-    color: antiquewhite;
-}
-.app1{
+.card_header h2, .card_header h1{
     text-align: center;
-    width: 15%;
-    height: 280px;
-    margin: 0;
-    position: relative;
-    overflow: hidden;
 }
-.app1:hover::after {
-    transform: translateY(0);
-    cursor: pointer;
-}   
-.app1::after{
-    content: "Las características de velocidad y resolución , permiten realizar biopsias guiadas por TAC , drenaje de colecciones, criocoagulación lesiones.";
-    font-size: 18px;
-    color: black;
-    background-color:rgb(203, 135, 34);
-    position: absolute;
-    inset: 0;
-    display: grid;
-    place-items: center;
-    transform: translateY(100%);
-    transition: transform 0.3s ease;
+.card_header h2{
+    color: aquamarine;
+    padding: 10px;
+    margin-bottom: 0px ;
 }
-/* 2 */
-.app2{
-    text-align: center;
-    width: 15%;
-    height: 280px;
-    margin: 0;
-    position: relative;
-    overflow: hidden;
+.card_header h1{
+    color: #cdb69c;
+    padding: 10px;
 }
-.app2:hover::after {
-    transform: translateY(0);
-    cursor: pointer;
-}   
-.app2::after{
-    content: "Score de calcificación coronaria, angiografía carotídea por CT, angiografía tridimensional para el diagnóstico de disección o aneurisma aórtico, planeación para la implantación y seguimiento de stents, etc.";
-    font-size: 18px;
-    color: black;
-    background-color:rgb(203, 135, 34);
-    position: absolute;
-    inset: 0;
-    display: grid;
-    place-items: center;
-    transform: translateY(100%);
-    transition: transform 0.3s;
-}
-/* 3 */
-.app3{
-    text-align: center;
-    width: 15%;
-    height: 280px;
-    margin: 0;
-    position: relative;
-    overflow: hidden;
-}
-.app3:hover::after {
-    transform: translateY(0);
-    cursor: pointer;
-}   
-.app3::after{
-    content: "Se minimizan los tiempos de examen, se disminuyen las dosis de radiación, detección de anomalías congénitas.";
-    font-size: 18px;
-    color: black;
-    background-color:rgb(203, 135, 34);
-    position: absolute;
-    inset: 0;
-    display: grid;
-    place-items: center;
-    transform: translateY(100%);
-    transition: transform 0.3s;
-}
-/* 4 */
-.app4{
-    text-align: center;
-    width: 15%;
-    height: 280px;
-    margin: 0;
-    position: relative;
-    overflow: hidden;
-}
-.app4:hover::after {
-    transform: translateY(0);
-    cursor: pointer;
-}   
-.app4::after{
-    content: "Planeación prequirúrgica para la resección de tumores, mapas vasculares para definir resecabilidad, útil especialmente en el hígado, colon y páncreas.";
-    font-size: 18px;
-    color: black;
-    background-color:rgb(203, 135, 34);
-    position: absolute;
-    inset: 0;
-    display: grid;
-    place-items: center;
-    transform: translateY(100%);
-    transition: transform 0.3s;
-}
-/* 5 */
-.app5{
-    text-align: center;
-    width: 15%;
-    height: 280px;
-    margin: 0;
-    position: relative;
-    overflow: hidden;
-}
-.app5:hover::after {
-    transform: translateY(0);
-    cursor: pointer;
-}   
-.app5::after{
-    content: "Detección de tromboembolismo pulmonar por angiotac de arterias pulmonares y detección de trombosis venosa de miembros inferiores como desencadenante. Broncoscopia virtual para seguimiento de estenosis ya conocida , implantación y seguimiento de stent traqueal.";
-    font-size: 18px;
-    color: black;
-    background-color:rgb(203, 135, 34);
-    position: absolute;
-    inset: 0;
-    display: grid;
-    place-items: center;
-    transform: translateY(100%);
-    transition: transform 0.3s;
-}
-/* 6 */
-.app6{
-    text-align: center;
-    width: 15%;
-    height: 280px;
-    margin: 0;
-    position: relative;
-    overflow: hidden;
-}
-.app6:hover::after {
-    transform: translateY(0);
-    cursor: pointer;
-}   
-.app6::after{
-    content: "Para la evaluación de masas renales, estenosis de la arteria renal, pielonefritis, mapeo arterial y venoso, definición de sistema pielocalicial y ureteral.Evaluación preoperatoria pretransplante: Evaluación preoperatoria de donantes renales y hepáticos definiendo la anatomía de los órganos.";
-    font-size: 18px;
-    color: black;
-    background-color:rgb(203, 135, 34);
-    position: absolute;
-    inset: 0;
-    display: grid;
-    place-items: center;
-    transform: translateY(100%);
-    transition: transform 0.3s;
-}
-/* 7 */
-.app7{
-    text-align: center;
-    width: 15%;
-    height: 280px;
-    margin: 0;
-    position: relative;
-    overflow: hidden;
-}
-.app7:hover::after {
-    transform: translateY(0);
-    cursor: pointer;
-}   
-.app7::after{
-    content: "Evaluación de la enfermedad hepática, metástasis de tumores cuyo origen primario está en otros órganos, cirrosis, donantes de hígado.Ortopedia: Gran ventaja de las reconstrucciones volumétricas y estudios dinámicos.";
-    font-size: 18px;
-    color: black;
-    background-color:rgb(203, 135, 34);
-    position: absolute;
-    inset: 0;
-    display: grid;
-    place-items: center;
-    transform: translateY(100%);
-    transition: transform 0.3s;
-}
-
 /* PARTES 1 Y 2 */
 .partes-1{
     width: 100%;
@@ -411,7 +226,6 @@ body{
 /* FUNDAMENTOS   */
 .fundamentos{
     width: 98.5%;
-    max-height: 1800px;
     margin: 15px 0px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -460,7 +274,7 @@ article .saber-mas:hover{
     text-align: center;
 }
 .segunda-1{
-    display: inline-flex;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -1061,8 +875,11 @@ section,article,h2,p {
     animation-fill-mode: both;
 }
 
-@media (max-width: 768px){
+@media (max-width: 1080px){
     .concep2 {
+        font-size: 10px;
+    }
+    .img {
         font-size: 10px;
     }
 }
