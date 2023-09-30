@@ -52,7 +52,7 @@ body{
     font-size: 4rem;
     padding: 10px 0px;    
     color: aqua;
-    margin:0 auto;
+    margin:20px auto;
     text-decoration: none
 }
 /* BARRA DE NAVEGACION */
@@ -214,7 +214,9 @@ body{
     padding: 10px 10px;
     font-size: 20px;
 }
-
+.sex4{
+    font-size: 50px;
+}
 .primera table .sex1:hover{
     background-color: rgba(75, 18, 126, 0.3);
 }
@@ -231,7 +233,7 @@ body{
     grid-auto-flow: row dense;
     justify-content: space-around;
     padding: 20px;
-    font-size: 0.5rem;
+    font-size: 15px;
 }
 .funda1{
     transition: all 0.3s  ease;
@@ -287,16 +289,16 @@ article .saber-mas:hover{
 .dif-1{
     margin: 10px;
     padding: 15px;
-    width: 450px;
-    height: 450px;
+    width: 350px;
+    height: 350px;
     border-radius: 50%;
     transition: .5s ease;
 } 
 .dif-01{
     margin: 10px;
     padding: 15px;
-    width: 450px;
-    height: 450px;
+    width: 350px;
+    height: 350px;
     border-radius: 50%;
     transition: .5s ease;
 } 
@@ -313,9 +315,8 @@ article .saber-mas:hover{
     font-family: 'Gill Sans';
 }
 .dif-2{
-    width: 60%;
-    height: auto;
-    padding: 270px 70px;
+    width: 55%;
+    padding: 350px 70px;
     border-radius: 50%;
     transition: 0.5s ease;
 }
@@ -533,8 +534,8 @@ article .saber-mas:hover{
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
     background-color: transparent;
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
     margin: 0 auto;
 }
@@ -568,14 +569,14 @@ article .saber-mas:hover{
     font-size: 12px;
     transform: rotateY(180deg);
     text-align: left;
-    margin-top: 80px;
+    margin-top: 10px;
 }
 .flip-card-back h2,.flip-card-front h2{
     color: #2dcfebe0;
 }
 .factor-pitch2{
+    margin-top: 50px;
     text-align: center;
-    margin: 0 auto;
     padding: 20px;
 }
 .sexta-1{
@@ -589,7 +590,7 @@ article .saber-mas:hover{
     padding: 35px 0;
 }
 .sexta-1 img{
-    width:100% ;
+    width:60% ;
     height: auto ;
     border-radius: 30px;
     transition: 0.2s ease;
@@ -615,7 +616,7 @@ article .saber-mas:hover{
     padding: 15px 0;
 }
 .sar1 img{
-    width:100% ;
+    width:45% ;
     height: 150px ;
     border-radius: 30px;
     transition: 0.2s ease;
@@ -696,8 +697,8 @@ article .saber-mas:hover{
     border-radius: 30px;
 }
 .mip0 img{
-    width: 450px;
-    height: 450px;
+    width: 350px;
+    height: 350px;
     border-radius: 30px;
 }
 .mip0 img:last-child{
@@ -742,14 +743,12 @@ article .saber-mas:hover{
 }
 .octava1{
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(3,1fr);
     justify-content: space-around;
     place-items: center;
-    min-height: 800px;
 }
 .octava1 article{
-    margin: 25px;
-    margin-left: 100px;
+    margin: 17px;
 }
 .octava1 article h2{
     margin: 10px 0;
@@ -757,18 +756,23 @@ article .saber-mas:hover{
 }
 .octa1{
     grid-row: 1/1;
+    grid-column: 1/3;
 }
 .octa2{
     grid-row: 2/3 ;
+    grid-column: 1/3;
 }
 .octa3{
     grid-row: 3/4;
+    grid-column: 1/3;
 }
 .octa4{
     grid-row: 4/5;
+    grid-column: 1/3;
 }
 .octa5{
     grid-row: 5/6;
+    grid-column: 1/3;
 }
 /* PIE DE PAGINA */
 footer{
@@ -846,7 +850,7 @@ section,article,h2,p {
     animation-fill-mode: both;
 }
 
-@media (max-width: 1080px){
+@media (min-width: 320px){
     body{
         margin: 0 30px;
     }
@@ -856,9 +860,10 @@ section,article,h2,p {
     .img {
         font-size: 30px;
     }
+
     .segunda-1{
         display: grid;
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(2,1fr);
     }
     .segunda-1 p{
         grid-column: 1/3;
