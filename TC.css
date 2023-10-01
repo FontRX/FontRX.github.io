@@ -13,8 +13,8 @@ html{
     box-sizing: border-box;
 }
 body{
-    margin: 0 auto;
-    max-width: 1600px;
+    margin: 0 15%;
+    max-width: 1700px;
 }
 /* IMAGEN DE FONDO */
 /* #fondo{
