@@ -14,7 +14,7 @@ html{
 }
 body{
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1600px;
 }
 /* IMAGEN DE FONDO */
 /* #fondo{
@@ -804,32 +804,6 @@ footer{
     background-color: #345991;
 }
 
-/* footer .rice{   
-    width: 250px; 
-    border: 2px solid #ffa812;
-    background-color: #ff9900;
-    color: white;
-    border-radius: 10px;
-    padding: 0.5em;
-    font-size: 1.5rem;
-    cursor: pointer;
-    box-shadow: 0 5px 0 #e67409;
-    transition-duration: 0.4s;
-    text-shadow: 2px 2px 0 #e67409;
-}
-
-footer .rice:hover{   
-    transform: translateY(5px);
-    box-shadow: 0 0 0 #e67409;
-    text-shadow: 2px 2px 0 #42964c;
-    background-color: #69c160;
-    border: 2px solid #42964c;
-} */
-
-
-
-
-
 
 /* ScrollReveal */
 @keyframes show {
@@ -852,8 +826,7 @@ section,article,h2,p {
     animation-range: entry 5% cover 20%;
     animation-fill-mode: both;
 }
-
-@media (min-width: 600px) {
+@media (width < 600px) {
     body{
         margin: 0 30px;
     }   
@@ -1027,6 +1000,7 @@ section,article,h2,p {
     .octa8{
         grid-row: 6/7;
         grid-column: 1/3;
+        width: 50%;
     }
     .octa4{
         grid-row: 7/8;
