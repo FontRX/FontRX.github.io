@@ -228,7 +228,7 @@ body{
     width: 98.5%;
     margin: 15px 0px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 15px;
     grid-auto-flow: row dense;
     justify-content: space-around;
@@ -563,6 +563,10 @@ article .saber-mas:hover{
 .flip-card-front {
     color: black;
 }
+.imgpitch{
+    width:350px;
+    height:350px;
+}
   /* Style the back side */
 .flip-card-back {
     font-size: 12px;
@@ -849,10 +853,10 @@ section,article,h2,p {
     animation-fill-mode: both;
 }
 
-@media (min-width: 320px){
+@media (min-width: 320px) or (max-width:480px){
     body{
         margin: 0 30px;
-    }
+    }   
     .concep2 {
         font-size: 10px;
     }
@@ -912,21 +916,28 @@ section,article,h2,p {
         height: max-content;
     }
     .contenedor1 div{
-        margin: 10px 20px;
+        width: 100%;
+    }
+    .front1,.front2,.back1,.back2{
+        margin: 10px 0px;
+        padding-left: 20px ;
     }
     .front1{
-        grid-column: 1/1;
+        grid-column: 1/3;
+        text-align: center;
     }
     .front2{
-        grid-column: 2/3;
+        grid-row: 3/4;
+        grid-column: 1/3;
+        text-align: center;
     }   
     .back1{
         grid-row: 2/3;
-        grid-column: 1/1;
+        grid-column: 1/3;
     }
     .back2{
-        grid-row: 2/3;
-        grid-column: 2/3;
+        grid-row: 4/5;
+        grid-column: 1/3;
     }
     .cuarta-2{
         grid-template-rows: repeat(1,1fr);
@@ -969,5 +980,9 @@ section,article,h2,p {
     }
     .defpitch1,.defpitch2{
         height: 150px;
+    }
+    .imgpitch{
+        width: 200px;
+        height: 200px;
     }
 }
