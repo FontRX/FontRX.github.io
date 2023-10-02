@@ -1082,6 +1082,22 @@ section,article,h2,p {
         padding: 0;
     }
     .ultimo0 .inicio{
-    font-size: 2rem;
+    font-size: 1rem;
+    }
+    .ultimo i{
+        font-size: 0.9rem;
+        margin-right: 1%;
+    }
+    @keyframes show {
+        0% {
+            opacity:none;
+            scale: none;
+            transition: none;
+        }
+        100% {
+            opacity: none;
+            scale: none;
+            transition: none;
+        } 
     }
 }
