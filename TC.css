@@ -1012,6 +1012,10 @@ section,article,h2,p {
     .defpitch1:hover,.defpitch2:hover{
         transform: none
     }
+    .imgpitch {
+        width: 35vh;
+        height: 35vh;
+    }
     .sexta {
         display: flex;
         flex-direction: column;
