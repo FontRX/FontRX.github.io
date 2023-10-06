@@ -1,28 +1,33 @@
 html{
     font-family: 'Montserrat', sans-serif;
-}
-/* cambio de margenes y fuente a todo el archivo */
-*{
-    font-size: 1rem ;
-    color: antiquewhite;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 1rem ;
+}
+body{
+    font-family: "brother-1816", sans-serif;
+    scroll-behavior: smooth;
+    font-weight: 100;
+    font-size: 20px;
+    margin: 0 5%;
+    max-width: 1700px;
 }
 /* IMAGEN DE FONDO */
-#fondo{
-    width: 100%;
-    height: 100vh;
-    background-image:linear-gradient(to top,rgba(5,7,12, 0.75) 0%, rgba(5,7,12, 0.75) 100% ),  
-    url(fondos/fondo\ anato.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+#fondo {
+	animation: fondo 5s linear infinite alternate both;
+}
+@keyframes fondo {
+    0% {
+        background-color: #55A6D9;
+    }
+    100% {
+        background-color: #018abe;
+    }
 }
 /* ENCABEZADO */
-.TITULO {
+.TITULO{
     text-align: center;
-    background-color:rgba(5,7,12, 0.3) ;
 }
 .fontx{
     font-size: 4rem;
@@ -32,10 +37,81 @@ html{
     width: 100%;
     text-decoration: none
 }
-.layout{
+/* MENU */
+.sub-menu-parent { position: relative; }
+.sub-menu { 
+  visibility: hidden; /* hides sub-menu */
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
     width: 100%;
+    transform: translateY(-2em);
+    z-index: -1;
+    transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.2s;
+}
+.sub-menu-parent:focus .sub-menu,
+.sub-menu-parent:focus-within .sub-menu,
+.sub-menu-parent:hover .sub-menu {
+  visibility: visible; /* shows sub-menu */
+    opacity: 1;
+    z-index: 1;
+    transform: translateY(0%);
+  transition-delay: 0s, 0s, 0s; /* this removes the transition delay so the menu will be visible while the other styles transition */
+}
+nav a { color: #02153d; display: block; padding: 0.5em 1em; text-decoration: none; }
+nav a:hover { color: #02153d; }
+nav ul,
+nav ul li { list-style-type: none; padding: 0; margin: 0; }
+nav > ul { background: #018185; text-align: center; }
+nav > ul > li { display: inline-block; border-left: solid 1px #aaaaaa; }
+nav > ul > li:first-child { border-left: none; }
+.sub-menu {
+    background: #00eed0;
+}
+.h1{
+    width: 100%;
+    text-align: center;
+    background-color: #40af93;
+}
+.plan1{
     display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-columns: repeat(3, 1fr);
-    gap: 8px;
+    grid-template-columns: repeat(auto-filt,minmax(3,1fr));
+    gap: 20px;
+}
+.coronal{
+    grid-column: 1/2;
+}
+.sagital{
+    grid-column:2/3 ;
+}
+.transversal{
+    grid-column: 3/4;
+}
+.coronal,.sagital,.transversal{
+    width: 100%;
+    height: 45vh;
+    border: 2px #0476D9 solid;
+}
+.titulo-planos{
+    text-align: center;
+}
+.plan2{
+    display: grid;
+    grid-template-columns: repeat(auto-filt,minmax(3,1fr));
+    gap:20px ;
+}
+.pa1{
+    grid-column: 1/2;
+}
+.ap2{
+    grid-column: 2/3;
+}
+.lat3{
+    grid-column: 3/4;
+}
+.AP,.PA,.Lateral{
+    width: 100%;
+    height: 45vh;
+    border: 2px #0476D9 solid;
 }
