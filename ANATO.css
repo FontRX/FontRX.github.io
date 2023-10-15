@@ -69,7 +69,7 @@ nav > ul > li:first-child { border-left: none; }
 .sub-menu {
     background: #018185;
 }
-.h1{
+.titulos-exsup{
     width: 100%;
     text-align: center;
     background-color: #40af93;
@@ -93,8 +93,9 @@ nav > ul > li:first-child { border-left: none; }
     height: 45vh;
     border: 2px #0E3659 solid;
 }
-.titulo-planos,.titulos-extremidad-sup{
+.titulo-planos,.subtitulos{
     text-align: center;
+    background-color: rgba(172, 65, 172, 0.696);
 }
 .plan2{
     display: grid;
@@ -177,13 +178,96 @@ nav > ul > li:first-child { border-left: none; }
 .muñeca3{
     grid-column: 1/4;
     grid-row: 2/3;
-    width: ;
-    transition: 0.3s ease; 
+    width: 20vh;
 }
 .muñeca ol{
     grid-column: 4/5;
     grid-row: 2/3;
 }
-.muñeca1:hover,.muñeca2:hover,.muñeca3:hover{
-    transform: scale(1.8);
+.muñeca1:hover,.muñeca2:hover{
+transform: scale(1.8);
+}
+.li{
+    position: relative;
+    right: 4vh;
+}
+.tunel{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(4,1fr));
+    justify-content: space-evenly;
+    gap:3vh;
+    align-content: center;
+    text-align: left;
+}
+.tunel img{
+    height: 30vh;
+    border-radius: 5%;
+    width: 100%;
+}
+.tunel1{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    transition: 0.2s ease;
+}
+.tunel2{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    transition: 0.2s ease;
+}
+.tunel1:hover,.tunel2:hover{
+    transform: scale(1.1);
+}
+.antebrazo,.codo{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(2,1fr));
+    gap:3vh;
+    align-items: center;
+    justify-content: center;
+}
+.antebrazo img,.codo img,.brazo img,.hombro img,.art img{
+    height: 60vh;
+    border-radius: 5%;
+    transition: 0.2s ease;
+}
+.ante1,.codo1,.hombro1{
+    grid-column: 1/2;
+}
+.ante2,.codo2{
+    grid-column: 2/3;
+}
+.ante1:hover,.ante2:hover,.codo1:hover,.codo2:hover,.brazo1:hover,.hombro1:hover,.arti1:hover{
+    transform: scale(1.1);
+}
+.codo img{
+    height: 50vh;
+    border-radius: 5%;
+    transition: 0.2s ease;
+}
+.brazo,.hombro,.art{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(1fr));
+    gap:3vh;
+    align-items: center;
+    justify-content: center;
+}
+.ext1{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(2,1fr));
+    gap:3vh;
+    align-items: center;
+    justify-content: center;
+}
+.ext1 img{
+    height: 50vh;
+    border-radius: 5%;
+    transition: 0.2s ease;
+}
+.ext2{
+    grid-column: 1/2;
+}
+.ext3{
+    grid-column: 2/3;
+}
+.ext2:hover,.ext3:hover{
+    transform: scale(1.2);
 }
