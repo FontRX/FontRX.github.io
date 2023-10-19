@@ -1160,3 +1160,14 @@ section,article,h2,p {
         transform: none
     }
 }
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333; 
+    z-index: 100; 
+}
+main {
+    margin-top: 100px; 
+}

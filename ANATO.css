@@ -28,10 +28,12 @@ body{
 /* ENCABEZADO */
 .TITULO{
     text-align: center;
+    background-color: #55d997;
+    margin: 0;
+    padding: 10px 0 0 0;
 }
 .fontx{
     font-size: 4rem;
-    padding: 10px 0px;    
     color: #031626;
     margin:0 ;
     width: 100%;
@@ -68,6 +70,9 @@ nav > ul > li { display: inline-block; border-left: solid 1px #aaaaaa; }
 nav > ul > li:first-child { border-left: none; }
 .sub-menu {
     background: #018185;
+}
+.h1{
+    text-align: center;
 }
 .titulos-exsup{
     width: 100%;
@@ -326,15 +331,17 @@ transform: scale(1.8);
 .tobillo1:hover,.tobillo2:hover{
     transform: scale(1.5);
 }
-.calcaneo,.pierna,.rodilla,.muslo,.cadera,.pelvis{
+.calcaneo,.pierna,.rodilla,.muslo,.cadera,.pelvis,.abdomen{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(2,1fr));
     align-items: center;
-    text-align: center;
+    gap: 3vh;
+    text-align: left;
     justify-content: space-evenly;
+    justify-items: center;
 }
 .calcaneo img,.pierna img,.rodilla img,.muslo img,
-.cadera img,.pelvis img{
+.cadera img,.pelvis img,.abdomen img{
     height: 40vh;
     border-radius: 5%;
     transition: 0.2s ease;
@@ -361,8 +368,298 @@ transform: scale(1.8);
 .pierna2,.rodilla2,.mus2,.cad2,.pel2{
     grid-column: 2/3;
 }
+.abdomen1{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.abdomen4{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.abdomen2{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.abdomen3{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
 .cal1:hover,.cal2:hover,.pierna1:hover,.pierna2:hover,
 .rodilla1:hover,.rodilla2:hover,.mus1:hover,.mus2:hover,
-.cad1:hover,.cad2:hover,.pel1:hover,.pel2:hover{
+.cad1:hover,.cad2:hover,.pel1:hover,.pel2:hover,.abdomen1:hover{
     transform: scale(1.5);
 }
+.columna{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(3,1fr));
+    gap: 2vh;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+.columna img{
+    height: 30vh;
+    border-radius: 5%;
+    transition: 0.2s ease;
+}
+.col1{
+    grid-column: 1/2;
+}
+.col2{
+    grid-column: 2/3;
+}
+.col3{
+    grid-column: 3/4;
+}
+.col1:hover{
+    transform: scale(2.6);
+}
+.col2:hover{
+    transform: scale(2);
+}
+.columna-cervical,.columna-dorsal,.columna-lumbar,.sacro-coxis,.torax{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(2,1fr));
+    gap: 2vh;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+.columna-cervical img,.columna-dorsal img,.columna-lumbar img{
+    height: 50vh;
+    border-radius: 5%;
+    transition: 0.2s ease;
+}
+.cer0{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.cer01{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.cer1{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.cer4{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.cer02{
+    grid-column: 1/3;
+    grid-row: 3/4;
+}
+.cer2{
+    grid-column: 1/2;
+    grid-row: 4/5;
+    justify-items: end;
+}
+.cer3{
+    grid-column: 2/3;
+    grid-row: 4/5;
+    justify-items: start;
+}
+.cer03{
+    grid-column: 1/3;
+    grid-row: 5/6;
+}
+.columna-lumbar{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(3,1fr));
+    gap: 2vh;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+.columna-lumbar img{
+    height: 30vh;
+    border-radius: 5%;
+    transition: 0.2s ease;
+}
+.lum0 li{
+    height: 4vh;
+}
+.lum0{
+    grid-column: 2/4;
+    grid-row: 1/2;
+}
+.lum1{
+    grid-column: 1/3;
+    grid-row: 1/2;
+    width: 35vh;
+}
+.lum2{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.lum3{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.lum4{
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+.sacro-coxis img{
+    height: 60vh;
+    border-radius: 5%;
+    transition: 0.2s ease;
+}
+.torax img{
+    transition: 0.2s ease  ;
+}
+.torax3{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.torax1{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.torax4{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.torax2{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.cer1:hover,.cer4:hover,.cer2:hover,.cer3:hover,.cer5:hover,.cer6:hover,
+.dor1:hover,.dor2:hover,.lum1:hover,.lum2:hover,.lum3:hover,.sac:hover,
+.torax3:hover,.torax4:hover{
+    transform: scale(1.2);
+}
+.lum1:hover,.lum2:hover,.lum3:hover,.lum4:hover{
+    transform: scale(1.7);
+}
+.craneo1 img,.craneo2 img,.craneo3 img,.craneo4 img,.craneo5 img,
+.craneo6 img{
+    height: 35vh;
+    width: 35vh;
+    border-radius: 3%;
+    transition: 0.2s ease;
+}
+.final{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(2,1fr));
+    justify-items: center;
+}
+.craneo1{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.craneo2{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.titulo-craneo-frontal{
+    text-align: center;
+    grid-column: 1/3;
+    grid-row: 2/3;
+}
+.craneo3{
+    grid-column: 1/3;
+    grid-row: 3/4;
+}
+.titulo-craneo-lateral{
+    text-align: center;
+    grid-column: 1/3;
+    grid-row: 4/5;
+}
+.craneo4{
+    grid-column: 1/3;
+    grid-row: 5/6;
+}
+.titulo-craneo-axial{
+    text-align: center;
+    grid-column: 1/3;
+    grid-row: 6/7;
+}
+.craneo5{
+    grid-column: 1/3;
+    grid-row: 7/8;
+}
+.titulo-cadwell{
+    grid-column: 1/3;
+    grid-row: 8/9;
+}
+.craneo6{
+    grid-column: 1/3;
+    grid-row: 9/10;
+}
+.craneo6{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(2,1fr));
+    justify-items: center;
+    gap: 4vh;
+}
+.craneo6 p{
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+.cra14{
+    grid-column: 1/3;
+    grid-row: 2/3;
+}
+.cra13{
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+.craneo6 ol{
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+.cra16{
+    grid-column: 1/3;
+    grid-row: 4/5;
+}
+.cra1:hover,.cra2:hover,.cra3:hover,.cra4:hover,.cra5:hover,.cra6:hover,
+.cra7:hover,.cra8:hover,.cra9:hover,.cra10:hover,.cra11:hover,.cra12:hover,
+.cra13:hover,.cra14:hover,.cra15:hover,.meninges:hover,.cra16:hover{
+    transform: scale(1.5);
+}
+.termino{
+    width: 100%;
+    background-color: #02153d;
+    height: 10vh;
+}
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333; 
+    z-index: 100; 
+}
+main {
+    margin-top: 100px; 
+}
+/* PIE DE PAGINA */
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    bottom: 0px;
+    width: 100%;
+    padding: 10px 25px;
+    background-color:rgba(5,7,12, 0.5);   
+}
+#underscore{
+    text-decoration: none;
+}
+
+.ultimo0 .inicio{
+    color: rgb(39, 205, 2);
+    width: 250px;
+    margin: 0 ;
+    border-radius: 10px;
+    font-size: 2.5rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.inicio:hover{
+    background-color: #345991;
+}
+
+

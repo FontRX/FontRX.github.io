@@ -1,23 +1,43 @@
 html{
     font-family: 'Montserrat', sans-serif;
-}
-/* cambio de margenes y fuente a todo el archivo */
-*{
-    font-size: 1rem ;
-    color: antiquewhite;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 1rem ;
+}
+body{
+    font-family: "brother-1816", sans-serif;
+    scroll-behavior: smooth;
+    font-weight: 100;
+    font-size: 20px;
+    margin: 0 5%;
+    max-width: 1700px;
 }
 /* IMAGEN DE FONDO */
-#fondo{
+#fondo {
+	animation: fondo 5s linear infinite alternate both;
+}
+@keyframes fondo {
+    0% {
+        background-color: #55A6D9;
+    }
+    100% {
+        background-color: #018abe;
+    }
+}
+/* ENCABEZADO */
+.TITULO{
+    text-align: center;
+    background-color: #55d997;
+    margin: 0;
+    padding: 10px 0 0 0;
+}
+.fontx{
+    font-size: 4rem;
+    color: #031626;
+    margin:0 ;
     width: 100%;
-    height: 100vh;
-    background-image:linear-gradient(to top,rgba(5,7,12, 0.75) 0%, rgba(5,7,12, 0.75) 100% ),  
-    url(fondos/fondo\ RM.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    text-decoration: none
 }
 /* MENU */
 .sub-menu-parent { position: relative; }
